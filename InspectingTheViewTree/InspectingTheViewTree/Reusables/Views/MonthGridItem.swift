@@ -12,15 +12,36 @@ struct MonthGridItem: View {
     @Binding var activeMonth: Month
     let month: Month
     
-    private var isActive: Bool { activeMonth == month }
-    
     var body: some View {
         Text(month.displayValue)
             .tag(month)
             .padding(10)
-            .cornerRadius(12)
-            .onTapGesture { self.activeMonth = self.month }
-            .background(MonthGridItemBorder(isShowing: isActive))
+            .background(PreferenceViewSetter(month: month))
+            .onTapGesture {
+                self.activeMonth = self.month
+            }
+    }
+    
+    
+    
+    private struct PreferenceViewSetter: View {
+        let month: Month
+        
+        var body: some View {
+            GeometryReader { geometry in
+                Rectangle()
+                    .fill(Color.clear)
+                    .preference(
+                        key: GridItemPreferenceKey.self,
+                        value: [
+                            PreferenceData(
+                                month: self.month,
+                                frame: geometry.frame(in: .named(Constants.CoordinateSpaces.monthGrid))
+                            )
+                        ]
+                    )
+            }
+        }
     }
 }
 

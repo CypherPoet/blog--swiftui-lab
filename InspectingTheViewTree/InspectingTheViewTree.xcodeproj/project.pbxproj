@@ -15,6 +15,9 @@
 		F378CA6E234C8FA7004CDF9E /* MonthsGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = F378CA6D234C8FA7004CDF9E /* MonthsGrid.swift */; };
 		F378CA94234DAAFF004CDF9E /* MonthGridItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F378CA93234DAAFF004CDF9E /* MonthGridItem.swift */; };
 		F378CA96234DAEF0004CDF9E /* MonthGridItemBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F378CA95234DAEF0004CDF9E /* MonthGridItemBorder.swift */; };
+		F378CA98234DD13E004CDF9E /* MonthGridItem+PreferenceData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F378CA97234DD13E004CDF9E /* MonthGridItem+PreferenceData.swift */; };
+		F378CA9B234DD39C004CDF9E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F378CA9A234DD39C004CDF9E /* Constants.swift */; };
+		F378CA9D234DD3BA004CDF9E /* CoordinateSpaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = F378CA9C234DD3BA004CDF9E /* CoordinateSpaces.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,9 @@
 		F378CA6D234C8FA7004CDF9E /* MonthsGrid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonthsGrid.swift; sourceTree = "<group>"; };
 		F378CA93234DAAFF004CDF9E /* MonthGridItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthGridItem.swift; sourceTree = "<group>"; };
 		F378CA95234DAEF0004CDF9E /* MonthGridItemBorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthGridItemBorder.swift; sourceTree = "<group>"; };
+		F378CA97234DD13E004CDF9E /* MonthGridItem+PreferenceData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MonthGridItem+PreferenceData.swift"; sourceTree = "<group>"; };
+		F378CA9A234DD39C004CDF9E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		F378CA9C234DD3BA004CDF9E /* CoordinateSpaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinateSpaces.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +97,7 @@
 		F378CA91234DAAE7004CDF9E /* Reusables */ = {
 			isa = PBXGroup;
 			children = (
+				F378CA99234DD37E004CDF9E /* Constants */,
 				F378CA92234DAAEE004CDF9E /* Views */,
 			);
 			path = Reusables;
@@ -101,8 +108,18 @@
 			children = (
 				F378CA93234DAAFF004CDF9E /* MonthGridItem.swift */,
 				F378CA95234DAEF0004CDF9E /* MonthGridItemBorder.swift */,
+				F378CA97234DD13E004CDF9E /* MonthGridItem+PreferenceData.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		F378CA99234DD37E004CDF9E /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				F378CA9A234DD39C004CDF9E /* Constants.swift */,
+				F378CA9C234DD3BA004CDF9E /* CoordinateSpaces.swift */,
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,9 +193,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F378CA9D234DD3BA004CDF9E /* CoordinateSpaces.swift in Sources */,
 				F378CA96234DAEF0004CDF9E /* MonthGridItemBorder.swift in Sources */,
 				F378CA6E234C8FA7004CDF9E /* MonthsGrid.swift in Sources */,
+				F378CA98234DD13E004CDF9E /* MonthGridItem+PreferenceData.swift in Sources */,
 				F378CA94234DAAFF004CDF9E /* MonthGridItem.swift in Sources */,
+				F378CA9B234DD39C004CDF9E /* Constants.swift in Sources */,
 				F378CA57234C8EAD004CDF9E /* AppDelegate.swift in Sources */,
 				F378CA59234C8EAD004CDF9E /* SceneDelegate.swift in Sources */,
 			);

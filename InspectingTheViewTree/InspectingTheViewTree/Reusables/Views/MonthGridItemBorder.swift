@@ -12,13 +12,10 @@ struct MonthGridItemBorder: View {
     let isShowing: Bool
     
     var body: some View {
-        
-        GeometryReader { geometry in
-            RoundedRectangle(cornerRadius: 15)
-                .stroke(lineWidth: 3)
-                .foregroundColor(self.isShowing ? Color.pink : Color.clear)
-                .animation(.easeInOut(duration: 0.4))
-        }
+        RoundedRectangle(cornerRadius: 14)
+            .stroke(lineWidth: 3)
+            .foregroundColor(self.isShowing ? Color.pink : Color.clear)
+            .animation(.easeInOut(duration: 0.33))
     }
 }
 

@@ -12,9 +12,9 @@ import SwiftUI
 
 extension MonthGridItem {
     
-    struct PreferenceData: Equatable {
+    struct PreferenceData {
         var month: Month
-        var frame: CGRect
+        var bounds: Anchor<CGRect>
     }
     
     

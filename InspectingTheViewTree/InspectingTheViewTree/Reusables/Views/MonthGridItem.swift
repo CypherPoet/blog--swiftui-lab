@@ -16,33 +16,16 @@ struct MonthGridItem: View {
         Text(month.displayValue)
             .tag(month)
             .padding(10)
-            .background(PreferenceViewSetter(month: month))
+            .anchorPreference(
+                key: GridItemPreferenceKey.self,
+                value: .bounds
+            ) { boundsAnchor in
+                [PreferenceData(month: self.month, bounds: boundsAnchor)]
+            }
             .onTapGesture {
                 self.activeMonth = self.month
             }
-    }
-    
-    
-    
-    private struct PreferenceViewSetter: View {
-        let month: Month
-        
-        var body: some View {
-            GeometryReader { geometry in
-                Rectangle()
-                    .fill(Color.clear)
-                    .preference(
-                        key: GridItemPreferenceKey.self,
-                        value: [
-                            PreferenceData(
-                                month: self.month,
-                                frame: geometry.frame(in: .named(Constants.CoordinateSpaces.monthGrid))
-                            )
-                        ]
-                    )
-            }
         }
-    }
 }
 
 

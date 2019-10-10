@@ -9,52 +9,6 @@
 import SwiftUI
 
 
-enum Month: Hashable {
-    case january
-    case february
-    case march
-    case april
-    case may
-    case june
-    case july
-    case august
-    case september
-    case october
-    case november
-    case december
-    
-    
-    var displayValue: String {
-        switch self {
-        case .january:
-            return "January"
-        case .february:
-            return "February"
-        case .march:
-            return "March"
-        case .april:
-            return "April"
-        case .may:
-            return "May"
-        case .june:
-            return "June"
-        case .july:
-            return "July"
-        case .august:
-            return "August"
-        case .september:
-            return "September"
-        case .october:
-            return "October"
-        case .november:
-            return "November"
-        case .december:
-            return "December"
-        }
-    }
-}
-
-
 struct MonthsGrid: View {
     @State private var activeMonth: Month = .january
     @State private var gridItemFrames: [Month: CGRect] = [
@@ -74,7 +28,6 @@ struct MonthsGrid: View {
     
     
     var body: some View {
-        ZStack(alignment: .topLeading) {
             VStack {
                 Spacer()
                 
@@ -105,27 +58,41 @@ struct MonthsGrid: View {
                 
                 Spacer()
             }
-            .padding()
-            .onPreferenceChange(MonthGridItem.GridItemPreferenceKey.self) { preferences in
-                for pref in preferences {
-                    self.gridItemFrames[pref.month] = pref.frame
+            .backgroundPreferenceValue(MonthGridItem.GridItemPreferenceKey.self) { preferences in
+                GeometryReader { geometry in
+                    ZStack(alignment: .topLeading) {
+                        self.createBorder(from: geometry, using: preferences)
+//                        HStack { Spacer() } // makes the ZStack to expand horizontally
+//                        VStack { Spacer() } // makes the ZStack to expand vertically
+                    }
+                    .frame(width: geometry.size.width, height: geometry.size.height, alignment: .topLeading)
                 }
             }
-            
-            
-            RoundedRectangle(cornerRadius: 15)
-                .stroke(lineWidth: 3.0)
-                .foregroundColor(.pink)
-                .frame(
-                    width: gridItemFrames[activeMonth]!.size.width,
-                    height: gridItemFrames[activeMonth]!.size.height
-                )
-                .offset(x: gridItemFrames[activeMonth]!.minX, y: gridItemFrames[activeMonth]!.minY)
-                .animation(.easeInOut(duration: 0.3))
-        }
-        .coordinateSpace(name: Constants.CoordinateSpaces.monthGrid)
     }
 }
+
+extension MonthsGrid {
+    
+    private func createBorder(
+        from geometry: GeometryProxy,
+        using preferences: [MonthGridItem.PreferenceData]
+    ) -> some View {
+        guard let preference = preferences.first(where: { $0.month == activeMonth }) else {
+            preconditionFailure("Unable to find preference data for month")
+        }
+        
+        let bounds = geometry[preference.bounds]
+        
+        return RoundedRectangle(cornerRadius: 15)
+            .stroke(lineWidth: 3.0)
+            .foregroundColor(.purple)
+            .frame(width: bounds.size.width, height: bounds.size.height)
+            .fixedSize()
+            .offset(x: bounds.minX, y: bounds.minY)
+            .animation(.easeInOut(duration: 0.3))
+    }
+}
+
 
 
 struct MonthsGrid_Previews: PreviewProvider {

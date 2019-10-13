@@ -14,16 +14,17 @@ extension MonthGridItem {
     
     struct PreferenceData {
         var month: Month
-        var bounds: Anchor<CGRect>
+        var topLeading: Anchor<CGPoint>? = nil
+        var bottomTrailing: Anchor<CGPoint>? = nil
     }
     
     
-    struct GridItemPreferenceKey: PreferenceKey {
+    struct PreferenceKey: SwiftUI.PreferenceKey {
         typealias Value = [PreferenceData]
 
-        static var defaultValue: [MonthGridItem.PreferenceData] = []
+        static var defaultValue: [PreferenceData] = []
         
-        static func reduce(value: inout [MonthGridItem.PreferenceData], nextValue: () -> [MonthGridItem.PreferenceData]) {
+        static func reduce(value: inout [PreferenceData], nextValue: () -> [PreferenceData]) {
             value += nextValue()
         }
     }

@@ -58,7 +58,7 @@ struct MonthsGrid: View {
                 
                 Spacer()
             }
-            .backgroundPreferenceValue(MonthGridItem.GridItemPreferenceKey.self) { preferences in
+            .backgroundPreferenceValue(MonthGridItem.PreferenceKey.self) { preferences in
                 GeometryReader { geometry in
                     ZStack(alignment: .topLeading) {
                         self.createBorder(from: geometry, using: preferences)
@@ -81,14 +81,26 @@ extension MonthsGrid {
             preconditionFailure("Unable to find preference data for month")
         }
         
-        let bounds = geometry[preference.bounds]
+        guard
+            let topLeadingAnchor = preference.topLeading,
+            let bottomTrailingAnchor = preference.bottomTrailing
+        else {
+            preconditionFailure("Unable to find bounds points in preference data")
+        }
+
+        let topLeadingPoint = geometry[topLeadingAnchor]
+        let bottomTrailingPoint = geometry[bottomTrailingAnchor]
+        
         
         return RoundedRectangle(cornerRadius: 15)
             .stroke(lineWidth: 3.0)
             .foregroundColor(.purple)
-            .frame(width: bounds.size.width, height: bounds.size.height)
+            .frame(
+                width: bottomTrailingPoint.x - topLeadingPoint.x,
+                height: bottomTrailingPoint.y - topLeadingPoint.y
+            )
             .fixedSize()
-            .offset(x: bounds.minX, y: bounds.minY)
+            .offset(x: topLeadingPoint.x, y: topLeadingPoint.y)
             .animation(.easeInOut(duration: 0.3))
     }
 }

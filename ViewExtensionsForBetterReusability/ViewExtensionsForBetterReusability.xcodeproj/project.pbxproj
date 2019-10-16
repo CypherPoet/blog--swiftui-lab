@@ -41,13 +41,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		F317F7492357B4C500B56343 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
 		F3CDC40D23579FEA00FB7151 = {
 			isa = PBXGroup;
 			children = (
@@ -90,7 +83,6 @@
 		F3CDC42D2357A2D800FB7151 /* Reusables */ = {
 			isa = PBXGroup;
 			children = (
-				F317F7492357B4C500B56343 /* Extensions */,
 				F3CDC42E2357A2DC00FB7151 /* View Modifiers */,
 			);
 			path = Reusables;

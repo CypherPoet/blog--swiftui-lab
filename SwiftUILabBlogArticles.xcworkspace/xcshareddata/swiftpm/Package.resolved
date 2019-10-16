@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "CypherPoetSwiftUIKit",
+        "repositoryURL": "https://github.com/CypherPoet/CypherPoetSwiftUIKit.git",
+        "state": {
+          "branch": null,
+          "revision": "ab4ad10e2073a03ea436316c44f20b38f36ab789",
+          "version": "0.0.1"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

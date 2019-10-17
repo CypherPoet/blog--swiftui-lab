@@ -3,22 +3,30 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F317F74B2357B4DD00B56343 /* View+RoundedBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F317F74A2357B4DD00B56343 /* View+RoundedBorder.swift */; };
+		F317F74E2357C08D00B56343 /* CypherPoetSwiftUIKit in Frameworks */ = {isa = PBXBuildFile; productRef = F317F74D2357C08D00B56343 /* CypherPoetSwiftUIKit */; };
+		F32DDFA0235903AC00AE12B3 /* SelectOnTap.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32DDF9F235903AC00AE12B3 /* SelectOnTap.swift */; };
+		F32DDFA22359095200AE12B3 /* View+SelectOnTap.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32DDFA12359095200AE12B3 /* View+SelectOnTap.swift */; };
+		F380E302235835160048B6F3 /* View+RetrieveBounds.swift in Sources */ = {isa = PBXBuildFile; fileRef = F380E301235835160048B6F3 /* View+RetrieveBounds.swift */; };
+		F380E304235836190048B6F3 /* CoordinateSpace.swift in Sources */ = {isa = PBXBuildFile; fileRef = F380E303235836190048B6F3 /* CoordinateSpace.swift */; };
+		F380E306235837790048B6F3 /* SavedBounds.swift in Sources */ = {isa = PBXBuildFile; fileRef = F380E305235837790048B6F3 /* SavedBounds.swift */; };
 		F3CDC41A23579FEA00FB7151 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CDC41923579FEA00FB7151 /* AppDelegate.swift */; };
 		F3CDC41C23579FEA00FB7151 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CDC41B23579FEA00FB7151 /* SceneDelegate.swift */; };
 		F3CDC41E23579FEA00FB7151 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CDC41D23579FEA00FB7151 /* ContentView.swift */; };
 		F3CDC42023579FEB00FB7151 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3CDC41F23579FEB00FB7151 /* Assets.xcassets */; };
 		F3CDC42323579FEB00FB7151 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3CDC42223579FEB00FB7151 /* Preview Assets.xcassets */; };
 		F3CDC42623579FEB00FB7151 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3CDC42423579FEB00FB7151 /* LaunchScreen.storyboard */; };
-		F3CDC4302357A38700FB7151 /* RoundedBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CDC42F2357A38700FB7151 /* RoundedBorder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		F317F74A2357B4DD00B56343 /* View+RoundedBorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+RoundedBorder.swift"; sourceTree = "<group>"; };
+		F32DDF9F235903AC00AE12B3 /* SelectOnTap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectOnTap.swift; sourceTree = "<group>"; };
+		F32DDFA12359095200AE12B3 /* View+SelectOnTap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+SelectOnTap.swift"; sourceTree = "<group>"; };
+		F380E301235835160048B6F3 /* View+RetrieveBounds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+RetrieveBounds.swift"; sourceTree = "<group>"; };
+		F380E303235836190048B6F3 /* CoordinateSpace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinateSpace.swift; sourceTree = "<group>"; };
+		F380E305235837790048B6F3 /* SavedBounds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedBounds.swift; sourceTree = "<group>"; };
 		F3CDC41623579FEA00FB7151 /* ViewExtensionsForBetterReusability.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViewExtensionsForBetterReusability.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3CDC41923579FEA00FB7151 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F3CDC41B23579FEA00FB7151 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -27,7 +35,6 @@
 		F3CDC42223579FEB00FB7151 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F3CDC42523579FEB00FB7151 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F3CDC42723579FEB00FB7151 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F3CDC42F2357A38700FB7151 /* RoundedBorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedBorder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,17 +42,50 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F317F74E2357C08D00B56343 /* CypherPoetSwiftUIKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F317F74F2357C2EB00B56343 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F317F75B2357FA2C00B56343 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F32DDF9E2359038900AE12B3 /* SelectOnTap */ = {
+			isa = PBXGroup;
+			children = (
+				F32DDF9F235903AC00AE12B3 /* SelectOnTap.swift */,
+				F32DDFA12359095200AE12B3 /* View+SelectOnTap.swift */,
+			);
+			path = SelectOnTap;
+			sourceTree = "<group>";
+		};
+		F380E300235834C40048B6F3 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				F380E303235836190048B6F3 /* CoordinateSpace.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
 		F3CDC40D23579FEA00FB7151 = {
 			isa = PBXGroup;
 			children = (
 				F3CDC41823579FEA00FB7151 /* ViewExtensionsForBetterReusability */,
 				F3CDC41723579FEA00FB7151 /* Products */,
+				F317F74F2357C2EB00B56343 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,7 +123,10 @@
 		F3CDC42D2357A2D800FB7151 /* Reusables */ = {
 			isa = PBXGroup;
 			children = (
+				F380E300235834C40048B6F3 /* Constants */,
+				F317F75B2357FA2C00B56343 /* Extensions */,
 				F3CDC42E2357A2DC00FB7151 /* View Modifiers */,
+				F380E305235837790048B6F3 /* SavedBounds.swift */,
 			);
 			path = Reusables;
 			sourceTree = "<group>";
@@ -91,8 +134,8 @@
 		F3CDC42E2357A2DC00FB7151 /* View Modifiers */ = {
 			isa = PBXGroup;
 			children = (
-				F3CDC42F2357A38700FB7151 /* RoundedBorder.swift */,
-				F317F74A2357B4DD00B56343 /* View+RoundedBorder.swift */,
+				F380E301235835160048B6F3 /* View+RetrieveBounds.swift */,
+				F32DDF9E2359038900AE12B3 /* SelectOnTap */,
 			);
 			path = "View Modifiers";
 			sourceTree = "<group>";
@@ -113,6 +156,9 @@
 			dependencies = (
 			);
 			name = ViewExtensionsForBetterReusability;
+			packageProductDependencies = (
+				F317F74D2357C08D00B56343 /* CypherPoetSwiftUIKit */,
+			);
 			productName = ViewExtensionsForBetterReusability;
 			productReference = F3CDC41623579FEA00FB7151 /* ViewExtensionsForBetterReusability.app */;
 			productType = "com.apple.product-type.application";
@@ -141,6 +187,9 @@
 				Base,
 			);
 			mainGroup = F3CDC40D23579FEA00FB7151;
+			packageReferences = (
+				F317F74C2357C08D00B56343 /* XCRemoteSwiftPackageReference "CypherPoetSwiftUIKit" */,
+			);
 			productRefGroup = F3CDC41723579FEA00FB7151 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -168,11 +217,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F380E304235836190048B6F3 /* CoordinateSpace.swift in Sources */,
+				F32DDFA22359095200AE12B3 /* View+SelectOnTap.swift in Sources */,
 				F3CDC41A23579FEA00FB7151 /* AppDelegate.swift in Sources */,
-				F3CDC4302357A38700FB7151 /* RoundedBorder.swift in Sources */,
-				F317F74B2357B4DD00B56343 /* View+RoundedBorder.swift in Sources */,
+				F380E306235837790048B6F3 /* SavedBounds.swift in Sources */,
 				F3CDC41C23579FEA00FB7151 /* SceneDelegate.swift in Sources */,
 				F3CDC41E23579FEA00FB7151 /* ContentView.swift in Sources */,
+				F32DDFA0235903AC00AE12B3 /* SelectOnTap.swift in Sources */,
+				F380E302235835160048B6F3 /* View+RetrieveBounds.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,6 +418,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F317F74C2357C08D00B56343 /* XCRemoteSwiftPackageReference "CypherPoetSwiftUIKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/CypherPoet/CypherPoetSwiftUIKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F317F74D2357C08D00B56343 /* CypherPoetSwiftUIKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F317F74C2357C08D00B56343 /* XCRemoteSwiftPackageReference "CypherPoetSwiftUIKit" */;
+			productName = CypherPoetSwiftUIKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F3CDC40E23579FEA00FB7151 /* Project object */;
 }

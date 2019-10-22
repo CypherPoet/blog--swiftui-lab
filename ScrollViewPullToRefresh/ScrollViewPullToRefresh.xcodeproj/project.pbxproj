@@ -1,0 +1,498 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F3660DB7235ED55100FAF849 /* RefreshableScrollView+MovingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3660DB6235ED55100FAF849 /* RefreshableScrollView+MovingView.swift */; };
+		F3660DB9235ED56400FAF849 /* RefreshableScrollView+FixedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3660DB8235ED56400FAF849 /* RefreshableScrollView+FixedView.swift */; };
+		F3660DBC235EDA5D00FAF849 /* PreferenceKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3660DBB235EDA5D00FAF849 /* PreferenceKeys.swift */; };
+		F3660DBE235EE66D00FAF849 /* RefreshableScrollViewChildKind.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3660DBD235EE66D00FAF849 /* RefreshableScrollViewChildKind.swift */; };
+		F3660DC1235EF63400FAF849 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3660DC0235EF63400FAF849 /* ActivityIndicator.swift */; };
+		F367BEC6235F5E2300FDEB0C /* Dog.swift in Sources */ = {isa = PBXBuildFile; fileRef = F367BEC5235F5E2300FDEB0C /* Dog.swift */; };
+		F367BEC9235F6E8400FDEB0C /* DogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F367BEC8235F6E8400FDEB0C /* DogView.swift */; };
+		F367BECD235F8F4500FDEB0C /* Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = F367BECC235F8F4500FDEB0C /* Appearance.swift */; };
+		F3A34AB5235DEA4B00F7C256 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A34AB4235DEA4B00F7C256 /* AppDelegate.swift */; };
+		F3A34AB7235DEA4B00F7C256 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A34AB6235DEA4B00F7C256 /* SceneDelegate.swift */; };
+		F3A34ABB235DEA4C00F7C256 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3A34ABA235DEA4C00F7C256 /* Assets.xcassets */; };
+		F3A34ABE235DEA4C00F7C256 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3A34ABD235DEA4C00F7C256 /* Preview Assets.xcassets */; };
+		F3A34AC1235DEA4C00F7C256 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3A34ABF235DEA4C00F7C256 /* LaunchScreen.storyboard */; };
+		F3A34ACD235DEB6500F7C256 /* CypherPoetSwiftUIKitImageUtils in Frameworks */ = {isa = PBXBuildFile; productRef = F3A34ACC235DEB6500F7C256 /* CypherPoetSwiftUIKitImageUtils */; };
+		F3A34ACF235DEB6500F7C256 /* CypherPoetSwiftUIKitViewModifiers in Frameworks */ = {isa = PBXBuildFile; productRef = F3A34ACE235DEB6500F7C256 /* CypherPoetSwiftUIKitViewModifiers */; };
+		F3A34AD4235DEBAD00F7C256 /* DogRouletteContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A34AD3235DEBAD00F7C256 /* DogRouletteContainerView.swift */; };
+		F3A34AD6235DEBEF00F7C256 /* RefreshableScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A34AD5235DEBEF00F7C256 /* RefreshableScrollView.swift */; };
+		F3A34AD8235DEC1B00F7C256 /* DogsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A34AD7235DEC1B00F7C256 /* DogsViewModel.swift */; };
+		F3A34ADA235DF0FF00F7C256 /* RefreshIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A34AD9235DF0FF00F7C256 /* RefreshIndicatorView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F3660DB6235ED55100FAF849 /* RefreshableScrollView+MovingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RefreshableScrollView+MovingView.swift"; sourceTree = "<group>"; };
+		F3660DB8235ED56400FAF849 /* RefreshableScrollView+FixedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RefreshableScrollView+FixedView.swift"; sourceTree = "<group>"; };
+		F3660DBB235EDA5D00FAF849 /* PreferenceKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceKeys.swift; sourceTree = "<group>"; };
+		F3660DBD235EE66D00FAF849 /* RefreshableScrollViewChildKind.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshableScrollViewChildKind.swift; sourceTree = "<group>"; };
+		F3660DC0235EF63400FAF849 /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		F367BEC5235F5E2300FDEB0C /* Dog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dog.swift; sourceTree = "<group>"; };
+		F367BEC8235F6E8400FDEB0C /* DogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogView.swift; sourceTree = "<group>"; };
+		F367BECC235F8F4500FDEB0C /* Appearance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Appearance.swift; sourceTree = "<group>"; };
+		F3A34AB1235DEA4B00F7C256 /* ScrollViewPullToRefresh.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScrollViewPullToRefresh.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3A34AB4235DEA4B00F7C256 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F3A34AB6235DEA4B00F7C256 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F3A34ABA235DEA4C00F7C256 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F3A34ABD235DEA4C00F7C256 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F3A34AC0235DEA4C00F7C256 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F3A34AC2235DEA4C00F7C256 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3A34AD3235DEBAD00F7C256 /* DogRouletteContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogRouletteContainerView.swift; sourceTree = "<group>"; };
+		F3A34AD5235DEBEF00F7C256 /* RefreshableScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshableScrollView.swift; sourceTree = "<group>"; };
+		F3A34AD7235DEC1B00F7C256 /* DogsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsViewModel.swift; sourceTree = "<group>"; };
+		F3A34AD9235DF0FF00F7C256 /* RefreshIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshIndicatorView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F3A34AAE235DEA4B00F7C256 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3A34ACF235DEB6500F7C256 /* CypherPoetSwiftUIKitViewModifiers in Frameworks */,
+				F3A34ACD235DEB6500F7C256 /* CypherPoetSwiftUIKitImageUtils in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F3660DBA235EDA3800FAF849 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				F3660DBD235EE66D00FAF849 /* RefreshableScrollViewChildKind.swift */,
+				F3660DBB235EDA5D00FAF849 /* PreferenceKeys.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		F3660DBF235EF3E400FAF849 /* RefreshableScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				F3A34AD5235DEBEF00F7C256 /* RefreshableScrollView.swift */,
+				F3660DB8235ED56400FAF849 /* RefreshableScrollView+FixedView.swift */,
+				F3660DB6235ED55100FAF849 /* RefreshableScrollView+MovingView.swift */,
+			);
+			path = RefreshableScrollView;
+			sourceTree = "<group>";
+		};
+		F3660DC3235EF64A00FAF849 /* UIView Representables */ = {
+			isa = PBXGroup;
+			children = (
+				F3660DC0235EF63400FAF849 /* ActivityIndicator.swift */,
+			);
+			path = "UIView Representables";
+			sourceTree = "<group>";
+		};
+		F367BEC3235F5E1800FDEB0C /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				F367BEC4235F5E1A00FDEB0C /* Models */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		F367BEC4235F5E1A00FDEB0C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F367BEC5235F5E2300FDEB0C /* Dog.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F367BEC7235F6E4800FDEB0C /* Dog Roulette */ = {
+			isa = PBXGroup;
+			children = (
+				F3A34AD3235DEBAD00F7C256 /* DogRouletteContainerView.swift */,
+				F367BEC8235F6E8400FDEB0C /* DogView.swift */,
+				F3A34AD7235DEC1B00F7C256 /* DogsViewModel.swift */,
+			);
+			path = "Dog Roulette";
+			sourceTree = "<group>";
+		};
+		F3A34AA8235DEA4B00F7C256 = {
+			isa = PBXGroup;
+			children = (
+				F3A34AB3235DEA4B00F7C256 /* ScrollViewPullToRefresh */,
+				F3A34AB2235DEA4B00F7C256 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F3A34AB2235DEA4B00F7C256 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F3A34AB1235DEA4B00F7C256 /* ScrollViewPullToRefresh.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F3A34AB3235DEA4B00F7C256 /* ScrollViewPullToRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				F3A34AC2235DEA4C00F7C256 /* Info.plist */,
+				F3A34AB4235DEA4B00F7C256 /* AppDelegate.swift */,
+				F367BECC235F8F4500FDEB0C /* Appearance.swift */,
+				F3A34AB6235DEA4B00F7C256 /* SceneDelegate.swift */,
+				F3A34ABA235DEA4C00F7C256 /* Assets.xcassets */,
+				F367BEC3235F5E1800FDEB0C /* Data */,
+				F3A34ABF235DEA4C00F7C256 /* LaunchScreen.storyboard */,
+				F3A34ABC235DEA4C00F7C256 /* Preview Content */,
+				F3A34AD1235DEBA000F7C256 /* Reusables */,
+				F3A34AD0235DEB7500F7C256 /* Scenes */,
+			);
+			path = ScrollViewPullToRefresh;
+			sourceTree = "<group>";
+		};
+		F3A34ABC235DEA4C00F7C256 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F3A34ABD235DEA4C00F7C256 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F3A34AD0235DEB7500F7C256 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				F367BEC7235F6E4800FDEB0C /* Dog Roulette */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		F3A34AD1235DEBA000F7C256 /* Reusables */ = {
+			isa = PBXGroup;
+			children = (
+				F3660DC3235EF64A00FAF849 /* UIView Representables */,
+				F3660DBA235EDA3800FAF849 /* Constants */,
+				F3A34AD2235DEBA400F7C256 /* Views */,
+			);
+			path = Reusables;
+			sourceTree = "<group>";
+		};
+		F3A34AD2235DEBA400F7C256 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F3660DBF235EF3E400FAF849 /* RefreshableScrollView */,
+				F3A34AD9235DF0FF00F7C256 /* RefreshIndicatorView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F3A34AB0235DEA4B00F7C256 /* ScrollViewPullToRefresh */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F3A34AC5235DEA4C00F7C256 /* Build configuration list for PBXNativeTarget "ScrollViewPullToRefresh" */;
+			buildPhases = (
+				F3A34AAD235DEA4B00F7C256 /* Sources */,
+				F3A34AAE235DEA4B00F7C256 /* Frameworks */,
+				F3A34AAF235DEA4B00F7C256 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ScrollViewPullToRefresh;
+			packageProductDependencies = (
+				F3A34ACC235DEB6500F7C256 /* CypherPoetSwiftUIKitImageUtils */,
+				F3A34ACE235DEB6500F7C256 /* CypherPoetSwiftUIKitViewModifiers */,
+			);
+			productName = ScrollViewPullToRefresh;
+			productReference = F3A34AB1235DEA4B00F7C256 /* ScrollViewPullToRefresh.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F3A34AA9235DEA4B00F7C256 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = CypherPoet;
+				TargetAttributes = {
+					F3A34AB0235DEA4B00F7C256 = {
+						CreatedOnToolsVersion = 11.2;
+					};
+				};
+			};
+			buildConfigurationList = F3A34AAC235DEA4B00F7C256 /* Build configuration list for PBXProject "ScrollViewPullToRefresh" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F3A34AA8235DEA4B00F7C256;
+			packageReferences = (
+				F3A34ACB235DEB6500F7C256 /* XCRemoteSwiftPackageReference "CypherPoetSwiftUIKit" */,
+			);
+			productRefGroup = F3A34AB2235DEA4B00F7C256 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F3A34AB0235DEA4B00F7C256 /* ScrollViewPullToRefresh */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F3A34AAF235DEA4B00F7C256 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3A34AC1235DEA4C00F7C256 /* LaunchScreen.storyboard in Resources */,
+				F3A34ABE235DEA4C00F7C256 /* Preview Assets.xcassets in Resources */,
+				F3A34ABB235DEA4C00F7C256 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F3A34AAD235DEA4B00F7C256 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3660DBE235EE66D00FAF849 /* RefreshableScrollViewChildKind.swift in Sources */,
+				F3A34AD8235DEC1B00F7C256 /* DogsViewModel.swift in Sources */,
+				F367BEC6235F5E2300FDEB0C /* Dog.swift in Sources */,
+				F3A34AB5235DEA4B00F7C256 /* AppDelegate.swift in Sources */,
+				F3A34ADA235DF0FF00F7C256 /* RefreshIndicatorView.swift in Sources */,
+				F3660DB9235ED56400FAF849 /* RefreshableScrollView+FixedView.swift in Sources */,
+				F3660DC1235EF63400FAF849 /* ActivityIndicator.swift in Sources */,
+				F3660DBC235EDA5D00FAF849 /* PreferenceKeys.swift in Sources */,
+				F367BEC9235F6E8400FDEB0C /* DogView.swift in Sources */,
+				F3A34AD4235DEBAD00F7C256 /* DogRouletteContainerView.swift in Sources */,
+				F3A34AB7235DEA4B00F7C256 /* SceneDelegate.swift in Sources */,
+				F367BECD235F8F4500FDEB0C /* Appearance.swift in Sources */,
+				F3660DB7235ED55100FAF849 /* RefreshableScrollView+MovingView.swift in Sources */,
+				F3A34AD6235DEBEF00F7C256 /* RefreshableScrollView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F3A34ABF235DEA4C00F7C256 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F3A34AC0235DEA4C00F7C256 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F3A34AC3235DEA4C00F7C256 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F3A34AC4235DEA4C00F7C256 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F3A34AC6235DEA4C00F7C256 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"ScrollViewPullToRefresh/Preview Content\"";
+				DEVELOPMENT_TEAM = QRXXH2RKAG;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = ScrollViewPullToRefresh/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.cypherpoet.ScrollViewPullToRefresh;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F3A34AC7235DEA4C00F7C256 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"ScrollViewPullToRefresh/Preview Content\"";
+				DEVELOPMENT_TEAM = QRXXH2RKAG;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = ScrollViewPullToRefresh/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.cypherpoet.ScrollViewPullToRefresh;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F3A34AAC235DEA4B00F7C256 /* Build configuration list for PBXProject "ScrollViewPullToRefresh" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3A34AC3235DEA4C00F7C256 /* Debug */,
+				F3A34AC4235DEA4C00F7C256 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F3A34AC5235DEA4C00F7C256 /* Build configuration list for PBXNativeTarget "ScrollViewPullToRefresh" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3A34AC6235DEA4C00F7C256 /* Debug */,
+				F3A34AC7235DEA4C00F7C256 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F3A34ACB235DEB6500F7C256 /* XCRemoteSwiftPackageReference "CypherPoetSwiftUIKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/CypherPoet/CypherPoetSwiftUIKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.8;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F3A34ACC235DEB6500F7C256 /* CypherPoetSwiftUIKitImageUtils */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F3A34ACB235DEB6500F7C256 /* XCRemoteSwiftPackageReference "CypherPoetSwiftUIKit" */;
+			productName = CypherPoetSwiftUIKitImageUtils;
+		};
+		F3A34ACE235DEB6500F7C256 /* CypherPoetSwiftUIKitViewModifiers */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F3A34ACB235DEB6500F7C256 /* XCRemoteSwiftPackageReference "CypherPoetSwiftUIKit" */;
+			productName = CypherPoetSwiftUIKitViewModifiers;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = F3A34AA9235DEA4B00F7C256 /* Project object */;
+}

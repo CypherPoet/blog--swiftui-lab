@@ -16,7 +16,7 @@ extension View {
         borderWidth: CGFloat = 3.0
     ) -> some View {
         self.modifier(
-            SelectOnTap(borderColor: borderColor, borderWidth: borderWidth)
+            SelectOnTap(earborderColor: borderColor, borderWidth: borderWidth)
         )
     }
 }

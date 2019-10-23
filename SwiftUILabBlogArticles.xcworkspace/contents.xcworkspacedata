@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:AnimationsPart1/AnimationsPart1.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:ScrollViewPullToRefresh/ScrollViewPullToRefresh.xcodeproj">
    </FileRef>
    <FileRef

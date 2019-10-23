@@ -16,6 +16,8 @@
 		F367BF1B236075CF00FDEB0C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F367BF1A236075CF00FDEB0C /* Assets.xcassets */; };
 		F367BF1E2360766B00FDEB0C /* CypherPoetSwiftUIKit.ImageUtils in Frameworks */ = {isa = PBXBuildFile; productRef = F367BF1D2360766B00FDEB0C /* CypherPoetSwiftUIKit.ImageUtils */; };
 		F367BF212360804600FDEB0C /* Example2.swift in Sources */ = {isa = PBXBuildFile; fileRef = F367BF202360804600FDEB0C /* Example2.swift */; };
+		F367BF362360F73C00FDEB0C /* PolygonShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = F367BF352360F73C00FDEB0C /* PolygonShape.swift */; };
+		F367BF39236100E200FDEB0C /* Example3.swift in Sources */ = {isa = PBXBuildFile; fileRef = F367BF38236100E100FDEB0C /* Example3.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,8 @@
 		F367BF162360731100FDEB0C /* Example1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example1.swift; sourceTree = "<group>"; };
 		F367BF1A236075CF00FDEB0C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F367BF202360804600FDEB0C /* Example2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example2.swift; sourceTree = "<group>"; };
+		F367BF352360F73C00FDEB0C /* PolygonShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolygonShape.swift; sourceTree = "<group>"; };
+		F367BF38236100E100FDEB0C /* Example3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example3.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +66,7 @@
 		F367BEFC2360709500FDEB0C /* AnimationsPart1 */ = {
 			isa = PBXGroup;
 			children = (
+				F367BF332360F69E00FDEB0C /* Reusables */,
 				F367BF0B2360709700FDEB0C /* Info.plist */,
 				F367BEFD2360709500FDEB0C /* AppDelegate.swift */,
 				F367BEFF2360709500FDEB0C /* SceneDelegate.swift */,
@@ -93,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				F367BF13236071EE00FDEB0C /* MainView.swift */,
+				F367BF37236100C700FDEB0C /* Example 3 - Drawing Polygon Shapes */,
 				F367BF1F2360802300FDEB0C /* Example 2 - Explicit Animation */,
 				F367BF152360721B00FDEB0C /* Example 1 */,
 			);
@@ -113,6 +119,30 @@
 				F367BF202360804600FDEB0C /* Example2.swift */,
 			);
 			path = "Example 2 - Explicit Animation";
+			sourceTree = "<group>";
+		};
+		F367BF332360F69E00FDEB0C /* Reusables */ = {
+			isa = PBXGroup;
+			children = (
+				F367BF342360F6A800FDEB0C /* Shapes */,
+			);
+			path = Reusables;
+			sourceTree = "<group>";
+		};
+		F367BF342360F6A800FDEB0C /* Shapes */ = {
+			isa = PBXGroup;
+			children = (
+				F367BF352360F73C00FDEB0C /* PolygonShape.swift */,
+			);
+			path = Shapes;
+			sourceTree = "<group>";
+		};
+		F367BF37236100C700FDEB0C /* Example 3 - Drawing Polygon Shapes */ = {
+			isa = PBXGroup;
+			children = (
+				F367BF38236100E100FDEB0C /* Example3.swift */,
+			);
+			path = "Example 3 - Drawing Polygon Shapes";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,8 +224,10 @@
 			files = (
 				F367BEFE2360709500FDEB0C /* AppDelegate.swift in Sources */,
 				F367BF14236071EE00FDEB0C /* MainView.swift in Sources */,
+				F367BF362360F73C00FDEB0C /* PolygonShape.swift in Sources */,
 				F367BF172360731100FDEB0C /* Example1.swift in Sources */,
 				F367BF212360804600FDEB0C /* Example2.swift in Sources */,
+				F367BF39236100E200FDEB0C /* Example3.swift in Sources */,
 				F367BF002360709500FDEB0C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

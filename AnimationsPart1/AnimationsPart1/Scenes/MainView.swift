@@ -27,6 +27,11 @@ extension MainView {
                     NavigationLink(destination: Example2()) {
                         Text("Example 2: Explicit Animation")
                     }
+                    
+                    
+                    NavigationLink(destination: Example3()) {
+                        Text("Example 2: Drawing Polygon Shapes")
+                    }
                 }
             }
             .navigationBarTitle("SwiftUI Animation")

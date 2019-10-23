@@ -27,7 +27,6 @@ extension Example2 {
 
     var body: some View {
         GeometryReader { geometry in
-                
             Image("link")
                 .resizable()
                 .aspectRatio(contentMode: .fit)

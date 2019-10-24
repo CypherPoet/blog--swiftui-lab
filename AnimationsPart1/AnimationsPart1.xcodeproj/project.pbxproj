@@ -110,11 +110,11 @@
 			isa = PBXGroup;
 			children = (
 				F367BF13236071EE00FDEB0C /* MainView.swift */,
-				F33559542361F89C00628227 /* Example 5 - Vertex-Connected Polygons */,
-				F367BF3A2361176300FDEB0C /* Example 4 - Animating Multiple Polygon Properties */,
-				F367BF37236100C700FDEB0C /* Example 3 - Animating Polygon Sides */,
-				F367BF1F2360802300FDEB0C /* Example 2 - Explicit Animation */,
 				F367BF152360721B00FDEB0C /* Example 1 */,
+				F367BF1F2360802300FDEB0C /* Example 2 - Explicit Animation */,
+				F367BF37236100C700FDEB0C /* Example 3 - Animating Polygon Sides */,
+				F367BF3A2361176300FDEB0C /* Example 4 - Animating Multiple Polygon Properties */,
+				F33559542361F89C00628227 /* Example 5 - Vertex-Connected Polygons */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";

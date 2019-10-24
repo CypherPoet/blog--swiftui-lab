@@ -12,17 +12,19 @@ import SwiftUI
 struct PolygonShape {
     var sides: Int
     var scale: Double
+    var drawAsMesh: Bool
     
     /// The number of sides represented with its decimal part
     /// so we can animate any changes between whole-numbers of sides.
     private var sidesAsDouble: Double
-    
 
-    init(sides: Int, scale: Double = 1.0) {
+
+    init(sides: Int, scale: Double = 1.0, drawAsMesh: Bool = false) {
         self.sides = sides
         self.sidesAsDouble = Double(sides)
 
         self.scale = scale
+        self.drawAsMesh = drawAsMesh
     }
 }
 
@@ -34,8 +36,24 @@ extension PolygonShape {
         (Double(min(rect.size.width, rect.size.height)) / 2.0) * scale
     }
     
+    
     func center(for rect: CGRect) -> CGPoint {
         CGPoint(x: rect.size.width / 2.0, y: rect.size.height / 2.0)
+    }
+    
+    
+    func angle(for side: Int) -> Angle {
+        .radians((Double(side) / sidesAsDouble) * (2 * .pi))
+    }
+    
+    
+    func vertex(forSide side: Int, center: CGPoint, hypotenuse: Double) -> CGPoint {
+        let angle = self.angle(for: side)
+        
+        return CGPoint(
+            x: center.x + CGFloat(cos(angle.radians) * hypotenuse),
+            y: center.y + CGFloat(sin(angle.radians) * hypotenuse)
+        )
     }
     
     
@@ -55,29 +73,58 @@ extension PolygonShape: Shape {
         let hypotenuse = self.hypotenuse(for: rect)
         let center = self.center(for: rect)
         
+        var vertices: [CGPoint] = []
         var path = Path()
         
-        for i in 0 ..< sidesToDraw {
-            let angle = (Double(i) / sidesAsDouble) * (2 * .pi)
+        for side in 0 ..< sidesToDraw {
+            let vertex = self.vertex(forSide: side, center: center, hypotenuse: hypotenuse)
             
-            // Calculate vertex position
-            let vertex = CGPoint(
-                x: center.x + CGFloat(cos(angle) * hypotenuse),
-                y: center.y + CGFloat(sin(angle) * hypotenuse)
-            )
-            
-            if i == 0 {
+            if side == 0 {
                 // move to the first vertex...
                 path.move(to: vertex)
             } else {
                 // ... or draw a line to the next vertex
                 path.addLine(to: vertex)
             }
+            
+            if drawAsMesh { vertices.append(vertex) }
         }
         
         path.closeSubpath()
         
+        if drawAsMesh {
+            drawMeshLines(path: &path, vertices: vertices)
+        }
+        
         return path
+    }
+}
+
+
+// MARK: - Private Helpers
+extension PolygonShape {
+    
+    private func drawMeshLines(
+        path: inout Path,
+        vertices: [CGPoint],
+        startingVertexIndex: Int = 0
+    ) {
+        let vertexCount = vertices.count
+        
+        // We need to have a vertex other than the starting point and its
+        // adjacent vertex (which is already drawn as the perimeter)
+        guard vertexCount - startingVertexIndex > 2 else { return }
+
+        let startingVertex = vertices[startingVertexIndex]
+        
+        for vertexOffset in 2 ..< vertexCount {
+            let targetVertex = vertices[(startingVertexIndex + vertexOffset) % vertexCount]
+            
+            path.move(to: startingVertex)
+            path.addLine(to: targetVertex)
+        }
+        
+        drawMeshLines(path: &path, vertices: vertices, startingVertexIndex: startingVertexIndex + 1)
     }
 }
 

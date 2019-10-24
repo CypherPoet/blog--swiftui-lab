@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F33559562361F8F200628227 /* Example5.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33559552361F8F200628227 /* Example5.swift */; };
 		F367BEFE2360709500FDEB0C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F367BEFD2360709500FDEB0C /* AppDelegate.swift */; };
 		F367BF002360709500FDEB0C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F367BEFF2360709500FDEB0C /* SceneDelegate.swift */; };
 		F367BF072360709700FDEB0C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F367BF062360709700FDEB0C /* Preview Assets.xcassets */; };
@@ -18,9 +19,11 @@
 		F367BF212360804600FDEB0C /* Example2.swift in Sources */ = {isa = PBXBuildFile; fileRef = F367BF202360804600FDEB0C /* Example2.swift */; };
 		F367BF362360F73C00FDEB0C /* PolygonShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = F367BF352360F73C00FDEB0C /* PolygonShape.swift */; };
 		F367BF39236100E200FDEB0C /* Example3.swift in Sources */ = {isa = PBXBuildFile; fileRef = F367BF38236100E100FDEB0C /* Example3.swift */; };
+		F367BF3C2361177600FDEB0C /* Example4.swift in Sources */ = {isa = PBXBuildFile; fileRef = F367BF3B2361177600FDEB0C /* Example4.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F33559552361F8F200628227 /* Example5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example5.swift; sourceTree = "<group>"; };
 		F367BEFA2360709500FDEB0C /* AnimationsPart1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimationsPart1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F367BEFD2360709500FDEB0C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F367BEFF2360709500FDEB0C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -33,6 +36,7 @@
 		F367BF202360804600FDEB0C /* Example2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example2.swift; sourceTree = "<group>"; };
 		F367BF352360F73C00FDEB0C /* PolygonShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolygonShape.swift; sourceTree = "<group>"; };
 		F367BF38236100E100FDEB0C /* Example3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example3.swift; sourceTree = "<group>"; };
+		F367BF3B2361177600FDEB0C /* Example4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example4.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +51,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F33559542361F89C00628227 /* Example 5 - Vertex-Connected Polygons */ = {
+			isa = PBXGroup;
+			children = (
+				F33559552361F8F200628227 /* Example5.swift */,
+			);
+			path = "Example 5 - Vertex-Connected Polygons";
+			sourceTree = "<group>";
+		};
 		F367BEF12360709500FDEB0C = {
 			isa = PBXGroup;
 			children = (
@@ -98,7 +110,9 @@
 			isa = PBXGroup;
 			children = (
 				F367BF13236071EE00FDEB0C /* MainView.swift */,
-				F367BF37236100C700FDEB0C /* Example 3 - Drawing Polygon Shapes */,
+				F33559542361F89C00628227 /* Example 5 - Vertex-Connected Polygons */,
+				F367BF3A2361176300FDEB0C /* Example 4 - Animating Multiple Polygon Properties */,
+				F367BF37236100C700FDEB0C /* Example 3 - Animating Polygon Sides */,
 				F367BF1F2360802300FDEB0C /* Example 2 - Explicit Animation */,
 				F367BF152360721B00FDEB0C /* Example 1 */,
 			);
@@ -137,12 +151,20 @@
 			path = Shapes;
 			sourceTree = "<group>";
 		};
-		F367BF37236100C700FDEB0C /* Example 3 - Drawing Polygon Shapes */ = {
+		F367BF37236100C700FDEB0C /* Example 3 - Animating Polygon Sides */ = {
 			isa = PBXGroup;
 			children = (
 				F367BF38236100E100FDEB0C /* Example3.swift */,
 			);
-			path = "Example 3 - Drawing Polygon Shapes";
+			path = "Example 3 - Animating Polygon Sides";
+			sourceTree = "<group>";
+		};
+		F367BF3A2361176300FDEB0C /* Example 4 - Animating Multiple Polygon Properties */ = {
+			isa = PBXGroup;
+			children = (
+				F367BF3B2361177600FDEB0C /* Example4.swift */,
+			);
+			path = "Example 4 - Animating Multiple Polygon Properties";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -223,11 +245,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				F367BEFE2360709500FDEB0C /* AppDelegate.swift in Sources */,
+				F367BF3C2361177600FDEB0C /* Example4.swift in Sources */,
 				F367BF14236071EE00FDEB0C /* MainView.swift in Sources */,
 				F367BF362360F73C00FDEB0C /* PolygonShape.swift in Sources */,
 				F367BF172360731100FDEB0C /* Example1.swift in Sources */,
 				F367BF212360804600FDEB0C /* Example2.swift in Sources */,
 				F367BF39236100E200FDEB0C /* Example3.swift in Sources */,
+				F33559562361F8F200628227 /* Example5.swift in Sources */,
 				F367BF002360709500FDEB0C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -23,14 +23,21 @@ extension MainView {
                     NavigationLink(destination: Example1()) {
                         Text("Example 1: Implicit Animation")
                     }
-                    
+
                     NavigationLink(destination: Example2()) {
                         Text("Example 2: Explicit Animation")
                     }
                     
-                    
                     NavigationLink(destination: Example3()) {
-                        Text("Example 2: Drawing Polygon Shapes")
+                        Text("Example 3: Animating Polygon Sides")
+                    }
+                    
+                    NavigationLink(destination: Example4()) {
+                        Text("Example 4: Animating Multiple Polygon Properties")
+                    }
+                    
+                    NavigationLink(destination: Example5()) {
+                        Text("Example 5: Vertex-Connected Polygons")
                     }
                 }
             }

@@ -11,15 +11,18 @@ import SwiftUI
 
 struct PolygonShape {
     var sides: Int
+    var scale: Double
     
     /// The number of sides represented with its decimal part
     /// so we can animate any changes between whole-numbers of sides.
     private var sidesAsDouble: Double
     
 
-    init(sides: Int) {
+    init(sides: Int, scale: Double = 1.0) {
         self.sides = sides
         self.sidesAsDouble = Double(sides)
+
+        self.scale = scale
     }
 }
 
@@ -28,7 +31,7 @@ struct PolygonShape {
 extension PolygonShape {
         
     func hypotenuse(for rect: CGRect) -> Double {
-        Double(min(rect.size.width, rect.size.height)) / 2.0
+        (Double(min(rect.size.width, rect.size.height)) / 2.0) * scale
     }
     
     func center(for rect: CGRect) -> CGPoint {
@@ -92,9 +95,13 @@ extension PolygonShape: Animatable {
     //
     // Its default implementation, however, is set to EmptyAnimatableData. So it does nothing.
     
-    var animatableData: Double {
-        get { sidesAsDouble }
-        set { sidesAsDouble = newValue }
+    var animatableData: AnimatablePair<Double, Double> {
+        get { AnimatablePair(sidesAsDouble, scale) }
+        
+        set {
+            sidesAsDouble = newValue.first
+            scale = newValue.second
+        }
     }
     
 }

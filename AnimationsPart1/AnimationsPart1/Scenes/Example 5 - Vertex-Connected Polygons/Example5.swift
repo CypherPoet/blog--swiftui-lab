@@ -1,5 +1,5 @@
 //
-//  Example3.swift
+//  Example5.swift
 //  AnimationsPart1
 //
 //  Created by CypherPoet on 10/23/19.
@@ -9,13 +9,15 @@
 import SwiftUI
 
 
-struct Example3: View {
+
+struct Example5: View {
     @State var numSides: Int = 3
+    @State var scale: Double = 1.0
 }
 
 
 // MARK: - Body
-extension Example3 {
+extension Example5 {
 
     var body: some View {
         VStack {
@@ -33,15 +35,14 @@ extension Example3 {
                 }
             }
         }
+        .padding()
         .navigationBarTitle("Polygon Shapes")
     }
 }
-
-
 // MARK: - Preview
-struct Example3_Previews: PreviewProvider {
+struct Example4_Preview5: PreviewProvider {
 
     static var previews: some View {
-        Example3()
+        Example5()
     }
 }

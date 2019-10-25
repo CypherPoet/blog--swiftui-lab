@@ -39,6 +39,10 @@ extension MainView {
                     NavigationLink(destination: Example5()) {
                         Text("Example 5: Vertex-Connected Polygons")
                     }
+                    
+                    NavigationLink(destination: Example6()) {
+                        Text("Example 6: Custom Animatable Types")
+                    }
                 }
             }
             .navigationBarTitle("SwiftUI Animation")

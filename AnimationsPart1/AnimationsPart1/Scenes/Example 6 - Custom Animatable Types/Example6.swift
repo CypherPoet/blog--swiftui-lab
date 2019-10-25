@@ -1,8 +1,8 @@
 //
-//  Example5.swift
+//  Example6.swift
 //  AnimationsPart1
 //
-//  Created by CypherPoet on 10/23/19.
+//  Created by CypherPoet on 10/24/19.
 // ✌️
 //
 
@@ -10,47 +10,57 @@ import SwiftUI
 
 
 
-struct Example5: View {
-    @State var numSides: Int = 4
-    @State var scale: Double = 1.0
-    @State var drawAsMesh: Bool = false
+struct Example6: View {
+    @State private var currentClockTime = ClockTime(hours: 2, minutes: 0, seconds: 10)
+    @State private var scale: CGFloat = 1.0
+    @State private var duration: Double = 1.0
 }
 
 
 // MARK: - Body
-extension Example5 {
+extension Example6 {
     
     var body: some View {
         VStack {
-            PolygonShape(sides: numSides, scale: scale, drawAsMesh: drawAsMesh)
+            ClockShape(time: currentClockTime)
                 .stroke(Color.purple, lineWidth: 2)
-                .animation(.easeOut(duration: 0.76))
+                .animation(.easeInOut(duration: duration))
+                .scaleEffect(scale)
+                .animation(.easeInOut(duration: duration / 2))
                 .padding()
                 .layoutPriority(1)
                 .frame(height: 400)
             
-            
+
             controlsForm
             
         }
-        .navigationBarTitle("Animated Meshs")
+        .navigationBarTitle("Custom Shape Animation")
     }
 }
 
 
 // MARK: - View Variables
-extension Example5 {
+extension Example6 {
     
     private var controlsForm: some View {
-        Form {
+        let clockTimes = [
+            ClockTime(hours: 2, minutes: 0, seconds: 50),
+            ClockTime(hours: 2, minutes: 1, seconds: 30),
+            ClockTime(hours: 2, minutes: 10, seconds: 42),
+            ClockTime(hours: 2, minutes: 33, seconds: 30),
+            ClockTime(hours: 3, minutes: 01, seconds: 0),
+        ]
+        
+        return List {
             
             VStack(spacing: 4.0) {
-                Text("Number of sides")
+                Text("Times")
                     .font(.headline)
                 
-                Picker("Number of Sides", selection: $numSides) {
-                    ForEach([2, 3, 5, 10, 20, 40], id: \.self) { sideCount in
-                        Text("\(sideCount)")
+                Picker("Clock times", selection: $currentClockTime) {
+                    ForEach(clockTimes, id: \.self) { clockTime in
+                        Text(clockTime.formattedTime)
                     }
                 }
                 .pickerStyle(SegmentedPickerStyle())
@@ -73,20 +83,15 @@ extension Example5 {
                     Text("Scale")
                 }
             }.padding()
-            
-            
-            Toggle(isOn: $drawAsMesh) {
-                Text("Draw As Mesh")
-            }
         }
     }
 }
 
 
 // MARK: - Preview
-struct Example5_Preview: PreviewProvider {
+struct Example6_Preview: PreviewProvider {
     
     static var previews: some View {
-        Example5()
+        Example6()
     }
 }

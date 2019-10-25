@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F300415623623E89005F5FE6 /* Example6.swift in Sources */ = {isa = PBXBuildFile; fileRef = F300415523623E89005F5FE6 /* Example6.swift */; };
+		F300415823623F9D005F5FE6 /* ClockShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = F300415723623F9D005F5FE6 /* ClockShape.swift */; };
+		F300415C23624174005F5FE6 /* ClockTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = F300415B23624174005F5FE6 /* ClockTime.swift */; };
 		F33559562361F8F200628227 /* Example5.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33559552361F8F200628227 /* Example5.swift */; };
 		F367BEFE2360709500FDEB0C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F367BEFD2360709500FDEB0C /* AppDelegate.swift */; };
 		F367BF002360709500FDEB0C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F367BEFF2360709500FDEB0C /* SceneDelegate.swift */; };
@@ -23,6 +26,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F300415523623E89005F5FE6 /* Example6.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example6.swift; sourceTree = "<group>"; };
+		F300415723623F9D005F5FE6 /* ClockShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockShape.swift; sourceTree = "<group>"; };
+		F300415B23624174005F5FE6 /* ClockTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockTime.swift; sourceTree = "<group>"; };
 		F33559552361F8F200628227 /* Example5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example5.swift; sourceTree = "<group>"; };
 		F367BEFA2360709500FDEB0C /* AnimationsPart1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimationsPart1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F367BEFD2360709500FDEB0C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +57,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F300415423623E77005F5FE6 /* Example 6 - Custom Animatable Types */ = {
+			isa = PBXGroup;
+			children = (
+				F300415523623E89005F5FE6 /* Example6.swift */,
+			);
+			path = "Example 6 - Custom Animatable Types";
+			sourceTree = "<group>";
+		};
+		F300415923624165005F5FE6 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				F300415A23624169005F5FE6 /* Models */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		F300415A23624169005F5FE6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F300415B23624174005F5FE6 /* ClockTime.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		F33559542361F89C00628227 /* Example 5 - Vertex-Connected Polygons */ = {
 			isa = PBXGroup;
 			children = (
@@ -78,13 +108,14 @@
 		F367BEFC2360709500FDEB0C /* AnimationsPart1 */ = {
 			isa = PBXGroup;
 			children = (
-				F367BF332360F69E00FDEB0C /* Reusables */,
+				F300415923624165005F5FE6 /* Data */,
 				F367BF0B2360709700FDEB0C /* Info.plist */,
 				F367BEFD2360709500FDEB0C /* AppDelegate.swift */,
 				F367BEFF2360709500FDEB0C /* SceneDelegate.swift */,
 				F367BF082360709700FDEB0C /* LaunchScreen.storyboard */,
 				F367BF052360709700FDEB0C /* Preview Content */,
 				F367BF11236071D900FDEB0C /* Resources */,
+				F367BF332360F69E00FDEB0C /* Reusables */,
 				F367BF12236071E100FDEB0C /* Scenes */,
 			);
 			path = AnimationsPart1;
@@ -110,6 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				F367BF13236071EE00FDEB0C /* MainView.swift */,
+				F300415423623E77005F5FE6 /* Example 6 - Custom Animatable Types */,
 				F367BF152360721B00FDEB0C /* Example 1 */,
 				F367BF1F2360802300FDEB0C /* Example 2 - Explicit Animation */,
 				F367BF37236100C700FDEB0C /* Example 3 - Animating Polygon Sides */,
@@ -147,6 +179,7 @@
 			isa = PBXGroup;
 			children = (
 				F367BF352360F73C00FDEB0C /* PolygonShape.swift */,
+				F300415723623F9D005F5FE6 /* ClockShape.swift */,
 			);
 			path = Shapes;
 			sourceTree = "<group>";
@@ -247,11 +280,14 @@
 				F367BEFE2360709500FDEB0C /* AppDelegate.swift in Sources */,
 				F367BF3C2361177600FDEB0C /* Example4.swift in Sources */,
 				F367BF14236071EE00FDEB0C /* MainView.swift in Sources */,
+				F300415623623E89005F5FE6 /* Example6.swift in Sources */,
 				F367BF362360F73C00FDEB0C /* PolygonShape.swift in Sources */,
+				F300415C23624174005F5FE6 /* ClockTime.swift in Sources */,
 				F367BF172360731100FDEB0C /* Example1.swift in Sources */,
 				F367BF212360804600FDEB0C /* Example2.swift in Sources */,
 				F367BF39236100E200FDEB0C /* Example3.swift in Sources */,
 				F33559562361F8F200628227 /* Example5.swift in Sources */,
+				F300415823623F9D005F5FE6 /* ClockShape.swift in Sources */,
 				F367BF002360709500FDEB0C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

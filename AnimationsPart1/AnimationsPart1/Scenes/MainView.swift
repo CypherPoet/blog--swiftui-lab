@@ -43,6 +43,10 @@ extension MainView {
                     NavigationLink(destination: Example6()) {
                         Text("Example 6: Custom Animatable Types")
                     }
+                    
+                    NavigationLink(destination: Example7()) {
+                        Text("Example 7: Petal to the Metal 🌼")
+                    }
                 }
             }
             .navigationBarTitle("SwiftUI Animation")

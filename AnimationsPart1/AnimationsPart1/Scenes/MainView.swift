@@ -48,6 +48,13 @@ extension MainView {
                         Text("Example 7: Petal to the Metal 🌼")
                     }
                 }
+                
+                
+                Section(header: Text("Part 2: GeometryEffect")) {
+                    NavigationLink(destination: Example8()) {
+                        Text("Example 8: Skewed Sliding View")
+                    }
+                }
             }
             .navigationBarTitle("SwiftUI Animation")
         }

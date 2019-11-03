@@ -1,5 +1,5 @@
 //
-//  View+SkewedOffset.swift
+//  View+SkewedOffsetEffect.swift
 //  AnimationsPart1
 //
 //  Created by CypherPoet on 11/1/19.
@@ -15,7 +15,7 @@ extension View {
         offset: CGFloat,
         animationPct: CGFloat
     ) -> some View {
-        modifier(SkewedOffset(
+        modifier(SkewedOffsetEffect(
             currentOffset: offset,
             animationPct: animationPct,
             direction: offset > 0 ? .right : .left

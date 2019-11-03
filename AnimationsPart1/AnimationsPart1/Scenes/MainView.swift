@@ -54,6 +54,10 @@ extension MainView {
                     NavigationLink(destination: Example8()) {
                         Text("Example 8: Skewed Sliding View")
                     }
+                    
+                    NavigationLink(destination: Example9()) {
+                        Text("Example 9: Animation Feedback + 3D Rotation")
+                    }
                 }
             }
             .navigationBarTitle("SwiftUI Animation")

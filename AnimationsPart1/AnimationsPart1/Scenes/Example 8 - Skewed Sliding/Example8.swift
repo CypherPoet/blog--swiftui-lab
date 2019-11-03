@@ -10,7 +10,7 @@ import SwiftUI
 
 
 struct Example8: View {
-    @State private var slideDirection: SkewedOffset.Direction = .left
+    @State private var slideDirection: SkewedOffsetEffect.Direction = .left
 
     private let slideAnimation = Animation.easeOut(duration: 0.33)
     

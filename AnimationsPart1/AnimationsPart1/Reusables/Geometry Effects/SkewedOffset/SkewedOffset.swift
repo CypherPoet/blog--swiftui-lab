@@ -1,5 +1,5 @@
 //
-//  SkewedOffset.swift
+//  SkewedOffsetEffect.swift
 //  AnimationsPart1
 //
 //  Created by CypherPoet on 11/1/19.
@@ -9,7 +9,7 @@
 import SwiftUI
 
 
-struct SkewedOffset {
+struct SkewedOffsetEffect {
     var currentOffset: CGFloat
     
     /// To simulate keyframes, this will animate between 0 and 1
@@ -20,7 +20,7 @@ struct SkewedOffset {
 }
 
 
-extension SkewedOffset {
+extension SkewedOffsetEffect {
     enum Direction {
         case left
         case right
@@ -40,7 +40,7 @@ extension SkewedOffset {
 
 
 // MARK: - Animatable Data
-extension SkewedOffset {
+extension SkewedOffsetEffect {
     var animatableData: AnimatablePair<CGFloat, CGFloat> {
         get { AnimatablePair(currentOffset, animationPct) }
         
@@ -53,7 +53,7 @@ extension SkewedOffset {
 
 
 // MARK: - Computeds
-extension SkewedOffset {
+extension SkewedOffsetEffect {
 
     var currentSkew: CGFloat {
         switch animationPct {
@@ -69,7 +69,7 @@ extension SkewedOffset {
 
 
 // MARK: - GeometryEffect
-extension SkewedOffset: GeometryEffect {
+extension SkewedOffsetEffect: GeometryEffect {
     
     
     /// Effect: The skew effect needs to increase and decrease during the first and last 20% of
@@ -91,7 +91,7 @@ extension SkewedOffset: GeometryEffect {
 
 
 // MARK: - Preview
-struct SkewedOffset_Previews: PreviewProvider {
+struct SkewedOffsetEffect_Previews: PreviewProvider {
 
     static var previews: some View {
         VStack {

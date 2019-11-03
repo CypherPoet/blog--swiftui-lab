@@ -30,6 +30,10 @@
 		F3AE83E6236C3F370017AF2C /* Example8.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AE83E5236C3F370017AF2C /* Example8.swift */; };
 		F3AE83E9236C3FD60017AF2C /* SkewedOffset.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AE83E8236C3FD60017AF2C /* SkewedOffset.swift */; };
 		F3AE83EB236C43590017AF2C /* View+SkewedOffset.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AE83EA236C43590017AF2C /* View+SkewedOffset.swift */; };
+		F3AE8422236DDFB10017AF2C /* Example9.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AE8421236DDFB10017AF2C /* Example9.swift */; };
+		F3AE8426236DE2320017AF2C /* TurnoverEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AE8425236DE2320017AF2C /* TurnoverEffect.swift */; };
+		F3AE8428236DEF490017AF2C /* View+Turnover.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AE8427236DEF480017AF2C /* View+Turnover.swift */; };
+		F3AE842B236DFC7C0017AF2C /* RotatingCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AE842A236DFC7C0017AF2C /* RotatingCard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +61,10 @@
 		F3AE83E5236C3F370017AF2C /* Example8.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example8.swift; sourceTree = "<group>"; };
 		F3AE83E8236C3FD60017AF2C /* SkewedOffset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkewedOffset.swift; sourceTree = "<group>"; };
 		F3AE83EA236C43590017AF2C /* View+SkewedOffset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+SkewedOffset.swift"; sourceTree = "<group>"; };
+		F3AE8421236DDFB10017AF2C /* Example9.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example9.swift; sourceTree = "<group>"; };
+		F3AE8425236DE2320017AF2C /* TurnoverEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TurnoverEffect.swift; sourceTree = "<group>"; };
+		F3AE8427236DEF480017AF2C /* View+Turnover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Turnover.swift"; sourceTree = "<group>"; };
+		F3AE842A236DFC7C0017AF2C /* RotatingCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotatingCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,7 +162,6 @@
 		F367BF12236071E100FDEB0C /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				F3AE83E4236C3F1A0017AF2C /* Example 8 - Skewed Sliding */,
 				F367BF13236071EE00FDEB0C /* MainView.swift */,
 				F367BF152360721B00FDEB0C /* Example 1 */,
 				F367BF1F2360802300FDEB0C /* Example 2 - Explicit Animation */,
@@ -163,6 +170,8 @@
 				F33559542361F89C00628227 /* Example 5 - Vertex-Connected Polygons */,
 				F300415423623E77005F5FE6 /* Example 6 - Custom Animatable Types */,
 				F3A5BF55236698350031FACF /* Example 7 - Metal Acceleration */,
+				F3AE83E4236C3F1A0017AF2C /* Example 8 - Skewed Sliding */,
+				F3AE8420236DDF9B0017AF2C /* Example 9 - Animation Feedback and 3D Rotation */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -186,6 +195,7 @@
 		F367BF332360F69E00FDEB0C /* Reusables */ = {
 			isa = PBXGroup;
 			children = (
+				F3AE8429236DFC690017AF2C /* Views */,
 				F3AE83E7236C3FBB0017AF2C /* Geometry Effects */,
 				F367BF342360F6A800FDEB0C /* Shapes */,
 			);
@@ -247,10 +257,44 @@
 		F3AE83E7236C3FBB0017AF2C /* Geometry Effects */ = {
 			isa = PBXGroup;
 			children = (
+				F3AE8424236DE2090017AF2C /* Turnover */,
+				F3AE8423236DDFDD0017AF2C /* SkewedOffset */,
+			);
+			path = "Geometry Effects";
+			sourceTree = "<group>";
+		};
+		F3AE8420236DDF9B0017AF2C /* Example 9 - Animation Feedback and 3D Rotation */ = {
+			isa = PBXGroup;
+			children = (
+				F3AE8421236DDFB10017AF2C /* Example9.swift */,
+			);
+			path = "Example 9 - Animation Feedback and 3D Rotation";
+			sourceTree = "<group>";
+		};
+		F3AE8423236DDFDD0017AF2C /* SkewedOffset */ = {
+			isa = PBXGroup;
+			children = (
 				F3AE83E8236C3FD60017AF2C /* SkewedOffset.swift */,
 				F3AE83EA236C43590017AF2C /* View+SkewedOffset.swift */,
 			);
-			path = "Geometry Effects";
+			path = SkewedOffset;
+			sourceTree = "<group>";
+		};
+		F3AE8424236DE2090017AF2C /* Turnover */ = {
+			isa = PBXGroup;
+			children = (
+				F3AE8425236DE2320017AF2C /* TurnoverEffect.swift */,
+				F3AE8427236DEF480017AF2C /* View+Turnover.swift */,
+			);
+			path = Turnover;
+			sourceTree = "<group>";
+		};
+		F3AE8429236DFC690017AF2C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F3AE842A236DFC7C0017AF2C /* RotatingCard.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -330,6 +374,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3AE842B236DFC7C0017AF2C /* RotatingCard.swift in Sources */,
 				F3A5BF59236698BF0031FACF /* SpinningFlower.swift in Sources */,
 				F367BEFE2360709500FDEB0C /* AppDelegate.swift in Sources */,
 				F3AE83E6236C3F370017AF2C /* Example8.swift in Sources */,
@@ -339,7 +384,9 @@
 				F367BF14236071EE00FDEB0C /* MainView.swift in Sources */,
 				F300415623623E89005F5FE6 /* Example6.swift in Sources */,
 				F367BF362360F73C00FDEB0C /* PolygonShape.swift in Sources */,
+				F3AE8428236DEF490017AF2C /* View+Turnover.swift in Sources */,
 				F300415C23624174005F5FE6 /* ClockTime.swift in Sources */,
+				F3AE8426236DE2320017AF2C /* TurnoverEffect.swift in Sources */,
 				F367BF172360731100FDEB0C /* Example1.swift in Sources */,
 				F367BF212360804600FDEB0C /* Example2.swift in Sources */,
 				F367BF39236100E200FDEB0C /* Example3.swift in Sources */,
@@ -348,6 +395,7 @@
 				F300415823623F9D005F5FE6 /* ClockShape.swift in Sources */,
 				F3AE83EB236C43590017AF2C /* View+SkewedOffset.swift in Sources */,
 				F367BF002360709500FDEB0C /* SceneDelegate.swift in Sources */,
+				F3AE8422236DDFB10017AF2C /* Example9.swift in Sources */,
 				F3A5BF572366984B0031FACF /* Example7.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

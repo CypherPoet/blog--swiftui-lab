@@ -10,6 +10,9 @@
 		F300415623623E89005F5FE6 /* Example6.swift in Sources */ = {isa = PBXBuildFile; fileRef = F300415523623E89005F5FE6 /* Example6.swift */; };
 		F300415823623F9D005F5FE6 /* ClockShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = F300415723623F9D005F5FE6 /* ClockShape.swift */; };
 		F300415C23624174005F5FE6 /* ClockTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = F300415B23624174005F5FE6 /* ClockTime.swift */; };
+		F30444A42370D66D00DF3F55 /* Example11.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30444A32370D66D00DF3F55 /* Example11.swift */; };
+		F30444A82370DB8000DF3F55 /* View+LayoutIgnorableOffsetEffect .swift in Sources */ = {isa = PBXBuildFile; fileRef = F30444A62370DB8000DF3F55 /* View+LayoutIgnorableOffsetEffect .swift */; };
+		F30444A92370DB8000DF3F55 /* LayoutIgnorableOffsetEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30444A72370DB8000DF3F55 /* LayoutIgnorableOffsetEffect.swift */; };
 		F33559562361F8F200628227 /* Example5.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33559552361F8F200628227 /* Example5.swift */; };
 		F367BEFE2360709500FDEB0C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F367BEFD2360709500FDEB0C /* AppDelegate.swift */; };
 		F367BF002360709500FDEB0C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F367BEFF2360709500FDEB0C /* SceneDelegate.swift */; };
@@ -46,6 +49,9 @@
 		F300415523623E89005F5FE6 /* Example6.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example6.swift; sourceTree = "<group>"; };
 		F300415723623F9D005F5FE6 /* ClockShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockShape.swift; sourceTree = "<group>"; };
 		F300415B23624174005F5FE6 /* ClockTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockTime.swift; sourceTree = "<group>"; };
+		F30444A32370D66D00DF3F55 /* Example11.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example11.swift; sourceTree = "<group>"; };
+		F30444A62370DB8000DF3F55 /* View+LayoutIgnorableOffsetEffect .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+LayoutIgnorableOffsetEffect .swift"; sourceTree = "<group>"; };
+		F30444A72370DB8000DF3F55 /* LayoutIgnorableOffsetEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutIgnorableOffsetEffect.swift; sourceTree = "<group>"; };
 		F33559552361F8F200628227 /* Example5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example5.swift; sourceTree = "<group>"; };
 		F367BEFA2360709500FDEB0C /* AnimationsPart1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimationsPart1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F367BEFD2360709500FDEB0C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -115,6 +121,23 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		F30444A22370D65700DF3F55 /* Example 11 - IgnoredByLayout */ = {
+			isa = PBXGroup;
+			children = (
+				F30444A32370D66D00DF3F55 /* Example11.swift */,
+			);
+			path = "Example 11 - IgnoredByLayout";
+			sourceTree = "<group>";
+		};
+		F30444A52370DB6B00DF3F55 /* Layout-Ignorable Offset */ = {
+			isa = PBXGroup;
+			children = (
+				F30444A62370DB8000DF3F55 /* View+LayoutIgnorableOffsetEffect .swift */,
+				F30444A72370DB8000DF3F55 /* LayoutIgnorableOffsetEffect.swift */,
+			);
+			path = "Layout-Ignorable Offset";
+			sourceTree = "<group>";
+		};
 		F33559542361F89C00628227 /* Example 5 - Vertex-Connected Polygons */ = {
 			isa = PBXGroup;
 			children = (
@@ -174,6 +197,7 @@
 		F367BF12236071E100FDEB0C /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				F30444A22370D65700DF3F55 /* Example 11 - IgnoredByLayout */,
 				F367BF13236071EE00FDEB0C /* MainView.swift */,
 				F3E53673236F7FB400C512B8 /* Example 10 - Animating Along A Path */,
 				F367BF152360721B00FDEB0C /* Example 1 */,
@@ -271,6 +295,7 @@
 		F3AE83E7236C3FBB0017AF2C /* Geometry Effects */ = {
 			isa = PBXGroup;
 			children = (
+				F30444A52370DB6B00DF3F55 /* Layout-Ignorable Offset */,
 				F3E53676236F80D800C512B8 /* Tracing */,
 				F3AE8424236DE2090017AF2C /* Turnover */,
 				F3AE8423236DDFDD0017AF2C /* SkewedOffset */,
@@ -419,14 +444,17 @@
 				F3E53675236F7FF000C512B8 /* Example10.swift in Sources */,
 				F3E5367A236F80FD00C512B8 /* View+TracingEffect.swift in Sources */,
 				F3E53683236F9C1100C512B8 /* InfinityShape.swift in Sources */,
+				F30444A42370D66D00DF3F55 /* Example11.swift in Sources */,
 				F367BF14236071EE00FDEB0C /* MainView.swift in Sources */,
 				F300415623623E89005F5FE6 /* Example6.swift in Sources */,
+				F30444A92370DB8000DF3F55 /* LayoutIgnorableOffsetEffect.swift in Sources */,
 				F3E5367F236F9A3700C512B8 /* LoopingPlaneView.swift in Sources */,
 				F367BF362360F73C00FDEB0C /* PolygonShape.swift in Sources */,
 				F3AE8428236DEF490017AF2C /* View+Turnover.swift in Sources */,
 				F300415C23624174005F5FE6 /* ClockTime.swift in Sources */,
 				F3AE8426236DE2320017AF2C /* TurnoverEffect.swift in Sources */,
 				F367BF172360731100FDEB0C /* Example1.swift in Sources */,
+				F30444A82370DB8000DF3F55 /* View+LayoutIgnorableOffsetEffect .swift in Sources */,
 				F367BF212360804600FDEB0C /* Example2.swift in Sources */,
 				F367BF39236100E200FDEB0C /* Example3.swift in Sources */,
 				F3A5BF5C23669AA50031FACF /* SpinningFlower+PetalLayer.swift in Sources */,

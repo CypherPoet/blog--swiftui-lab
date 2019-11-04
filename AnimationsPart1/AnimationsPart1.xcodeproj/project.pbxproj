@@ -34,6 +34,12 @@
 		F3AE8426236DE2320017AF2C /* TurnoverEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AE8425236DE2320017AF2C /* TurnoverEffect.swift */; };
 		F3AE8428236DEF490017AF2C /* View+Turnover.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AE8427236DEF480017AF2C /* View+Turnover.swift */; };
 		F3AE842B236DFC7C0017AF2C /* RotatingCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AE842A236DFC7C0017AF2C /* RotatingCard.swift */; };
+		F3E53675236F7FF000C512B8 /* Example10.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E53674236F7FF000C512B8 /* Example10.swift */; };
+		F3E53678236F80E700C512B8 /* TracingEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E53677236F80E700C512B8 /* TracingEffect.swift */; };
+		F3E5367A236F80FD00C512B8 /* View+TracingEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E53679236F80FD00C512B8 /* View+TracingEffect.swift */; };
+		F3E5367D236F89DD00C512B8 /* Burritos in Frameworks */ = {isa = PBXBuildFile; productRef = F3E5367C236F89DD00C512B8 /* Burritos */; };
+		F3E5367F236F9A3700C512B8 /* LoopingPlaneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E5367E236F9A3700C512B8 /* LoopingPlaneView.swift */; };
+		F3E53683236F9C1100C512B8 /* InfinityShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E53682236F9C1100C512B8 /* InfinityShape.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,6 +71,11 @@
 		F3AE8425236DE2320017AF2C /* TurnoverEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TurnoverEffect.swift; sourceTree = "<group>"; };
 		F3AE8427236DEF480017AF2C /* View+Turnover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Turnover.swift"; sourceTree = "<group>"; };
 		F3AE842A236DFC7C0017AF2C /* RotatingCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotatingCard.swift; sourceTree = "<group>"; };
+		F3E53674236F7FF000C512B8 /* Example10.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example10.swift; sourceTree = "<group>"; };
+		F3E53677236F80E700C512B8 /* TracingEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TracingEffect.swift; sourceTree = "<group>"; };
+		F3E53679236F80FD00C512B8 /* View+TracingEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+TracingEffect.swift"; sourceTree = "<group>"; };
+		F3E5367E236F9A3700C512B8 /* LoopingPlaneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoopingPlaneView.swift; sourceTree = "<group>"; };
+		F3E53682236F9C1100C512B8 /* InfinityShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfinityShape.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3E5367D236F89DD00C512B8 /* Burritos in Frameworks */,
 				F367BF1E2360766B00FDEB0C /* CypherPoetSwiftUIKit.ImageUtils in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -163,6 +175,7 @@
 			isa = PBXGroup;
 			children = (
 				F367BF13236071EE00FDEB0C /* MainView.swift */,
+				F3E53673236F7FB400C512B8 /* Example 10 - Animating Along A Path */,
 				F367BF152360721B00FDEB0C /* Example 1 */,
 				F367BF1F2360802300FDEB0C /* Example 2 - Explicit Animation */,
 				F367BF37236100C700FDEB0C /* Example 3 - Animating Polygon Sides */,
@@ -205,6 +218,7 @@
 		F367BF342360F6A800FDEB0C /* Shapes */ = {
 			isa = PBXGroup;
 			children = (
+				F3E53682236F9C1100C512B8 /* InfinityShape.swift */,
 				F367BF352360F73C00FDEB0C /* PolygonShape.swift */,
 				F300415723623F9D005F5FE6 /* ClockShape.swift */,
 				F3A5BF5A23669A8A0031FACF /* SpinningFlower */,
@@ -257,6 +271,7 @@
 		F3AE83E7236C3FBB0017AF2C /* Geometry Effects */ = {
 			isa = PBXGroup;
 			children = (
+				F3E53676236F80D800C512B8 /* Tracing */,
 				F3AE8424236DE2090017AF2C /* Turnover */,
 				F3AE8423236DDFDD0017AF2C /* SkewedOffset */,
 			);
@@ -297,6 +312,24 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		F3E53673236F7FB400C512B8 /* Example 10 - Animating Along A Path */ = {
+			isa = PBXGroup;
+			children = (
+				F3E53674236F7FF000C512B8 /* Example10.swift */,
+				F3E5367E236F9A3700C512B8 /* LoopingPlaneView.swift */,
+			);
+			path = "Example 10 - Animating Along A Path";
+			sourceTree = "<group>";
+		};
+		F3E53676236F80D800C512B8 /* Tracing */ = {
+			isa = PBXGroup;
+			children = (
+				F3E53677236F80E700C512B8 /* TracingEffect.swift */,
+				F3E53679236F80FD00C512B8 /* View+TracingEffect.swift */,
+			);
+			path = Tracing;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -315,6 +348,7 @@
 			name = AnimationsPart1;
 			packageProductDependencies = (
 				F367BF1D2360766B00FDEB0C /* CypherPoetSwiftUIKit.ImageUtils */,
+				F3E5367C236F89DD00C512B8 /* Burritos */,
 			);
 			productName = AnimationsPart1;
 			productReference = F367BEFA2360709500FDEB0C /* AnimationsPart1.app */;
@@ -346,6 +380,7 @@
 			mainGroup = F367BEF12360709500FDEB0C;
 			packageReferences = (
 				F367BF1C2360766B00FDEB0C /* XCRemoteSwiftPackageReference "CypherPoetSwiftUIKit" */,
+				F3E5367B236F89DD00C512B8 /* XCRemoteSwiftPackageReference "Burritos" */,
 			);
 			productRefGroup = F367BEFB2360709500FDEB0C /* Products */;
 			projectDirPath = "";
@@ -381,8 +416,12 @@
 				F3A5BF5E2366A2F80031FACF /* PetalShape.swift in Sources */,
 				F367BF3C2361177600FDEB0C /* Example4.swift in Sources */,
 				F3AE83E9236C3FD60017AF2C /* SkewedOffset.swift in Sources */,
+				F3E53675236F7FF000C512B8 /* Example10.swift in Sources */,
+				F3E5367A236F80FD00C512B8 /* View+TracingEffect.swift in Sources */,
+				F3E53683236F9C1100C512B8 /* InfinityShape.swift in Sources */,
 				F367BF14236071EE00FDEB0C /* MainView.swift in Sources */,
 				F300415623623E89005F5FE6 /* Example6.swift in Sources */,
+				F3E5367F236F9A3700C512B8 /* LoopingPlaneView.swift in Sources */,
 				F367BF362360F73C00FDEB0C /* PolygonShape.swift in Sources */,
 				F3AE8428236DEF490017AF2C /* View+Turnover.swift in Sources */,
 				F300415C23624174005F5FE6 /* ClockTime.swift in Sources */,
@@ -392,6 +431,7 @@
 				F367BF39236100E200FDEB0C /* Example3.swift in Sources */,
 				F3A5BF5C23669AA50031FACF /* SpinningFlower+PetalLayer.swift in Sources */,
 				F33559562361F8F200628227 /* Example5.swift in Sources */,
+				F3E53678236F80E700C512B8 /* TracingEffect.swift in Sources */,
 				F300415823623F9D005F5FE6 /* ClockShape.swift in Sources */,
 				F3AE83EB236C43590017AF2C /* View+SkewedOffset.swift in Sources */,
 				F367BF002360709500FDEB0C /* SceneDelegate.swift in Sources */,
@@ -600,6 +640,14 @@
 				minimumVersion = 0.0.9;
 			};
 		};
+		F3E5367B236F89DD00C512B8 /* XCRemoteSwiftPackageReference "Burritos" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/guillermomuntaner/Burritos.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.3;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -607,6 +655,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = F367BF1C2360766B00FDEB0C /* XCRemoteSwiftPackageReference "CypherPoetSwiftUIKit" */;
 			productName = CypherPoetSwiftUIKit.ImageUtils;
+		};
+		F3E5367C236F89DD00C512B8 /* Burritos */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F3E5367B236F89DD00C512B8 /* XCRemoteSwiftPackageReference "Burritos" */;
+			productName = Burritos;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

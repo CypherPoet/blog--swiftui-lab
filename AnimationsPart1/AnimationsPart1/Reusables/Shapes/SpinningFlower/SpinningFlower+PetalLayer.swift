@@ -10,7 +10,6 @@ import SwiftUI
 
 
 extension SpinningFlower {
-    
     struct PetalLayer: View {
         let petalCount: Int
         let petalLength: Double

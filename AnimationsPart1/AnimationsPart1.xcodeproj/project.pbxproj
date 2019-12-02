@@ -197,9 +197,7 @@
 		F367BF12236071E100FDEB0C /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				F30444A22370D65700DF3F55 /* Example 11 - IgnoredByLayout */,
 				F367BF13236071EE00FDEB0C /* MainView.swift */,
-				F3E53673236F7FB400C512B8 /* Example 10 - Animating Along A Path */,
 				F367BF152360721B00FDEB0C /* Example 1 */,
 				F367BF1F2360802300FDEB0C /* Example 2 - Explicit Animation */,
 				F367BF37236100C700FDEB0C /* Example 3 - Animating Polygon Sides */,
@@ -209,6 +207,8 @@
 				F3A5BF55236698350031FACF /* Example 7 - Metal Acceleration */,
 				F3AE83E4236C3F1A0017AF2C /* Example 8 - Skewed Sliding */,
 				F3AE8420236DDF9B0017AF2C /* Example 9 - Animation Feedback and 3D Rotation */,
+				F3E53673236F7FB400C512B8 /* Example 10 - Animating Along A Path */,
+				F30444A22370D65700DF3F55 /* Example 11 - IgnoredByLayout */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";

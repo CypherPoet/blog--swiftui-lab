@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "CypherPoetMathUtils",
+        "repositoryURL": "https://github.com/CypherPoet/CypherPoetMathUtils.git",
+        "state": {
+          "branch": null,
+          "revision": "cb3982429ced3d0e4f2011b9f03baa72f4989081",
+          "version": "0.0.2"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

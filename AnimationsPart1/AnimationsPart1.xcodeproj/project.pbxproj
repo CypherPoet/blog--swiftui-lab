@@ -26,6 +26,7 @@
 		F367BF362360F73C00FDEB0C /* PolygonShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = F367BF352360F73C00FDEB0C /* PolygonShape.swift */; };
 		F367BF39236100E200FDEB0C /* Example3.swift in Sources */ = {isa = PBXBuildFile; fileRef = F367BF38236100E100FDEB0C /* Example3.swift */; };
 		F367BF3C2361177600FDEB0C /* Example4.swift in Sources */ = {isa = PBXBuildFile; fileRef = F367BF3B2361177600FDEB0C /* Example4.swift */; };
+		F36D28DF23961A4E00095B66 /* Example12.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36D28DE23961A4E00095B66 /* Example12.swift */; };
 		F3A5BF572366984B0031FACF /* Example7.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A5BF562366984B0031FACF /* Example7.swift */; };
 		F3A5BF59236698BF0031FACF /* SpinningFlower.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A5BF58236698BF0031FACF /* SpinningFlower.swift */; };
 		F3A5BF5C23669AA50031FACF /* SpinningFlower+PetalLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A5BF5B23669AA50031FACF /* SpinningFlower+PetalLayer.swift */; };
@@ -66,6 +67,7 @@
 		F367BF352360F73C00FDEB0C /* PolygonShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolygonShape.swift; sourceTree = "<group>"; };
 		F367BF38236100E100FDEB0C /* Example3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example3.swift; sourceTree = "<group>"; };
 		F367BF3B2361177600FDEB0C /* Example4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example4.swift; sourceTree = "<group>"; };
+		F36D28DE23961A4E00095B66 /* Example12.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example12.swift; sourceTree = "<group>"; };
 		F3A5BF562366984B0031FACF /* Example7.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example7.swift; sourceTree = "<group>"; };
 		F3A5BF58236698BF0031FACF /* SpinningFlower.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinningFlower.swift; sourceTree = "<group>"; };
 		F3A5BF5B23669AA50031FACF /* SpinningFlower+PetalLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SpinningFlower+PetalLayer.swift"; sourceTree = "<group>"; };
@@ -198,6 +200,7 @@
 			isa = PBXGroup;
 			children = (
 				F367BF13236071EE00FDEB0C /* MainView.swift */,
+				F36D28DD23961A3300095B66 /* Example 12 - Reproducing an AnimatableModifier Bug */,
 				F367BF152360721B00FDEB0C /* Example 1 */,
 				F367BF1F2360802300FDEB0C /* Example 2 - Explicit Animation */,
 				F367BF37236100C700FDEB0C /* Example 3 - Animating Polygon Sides */,
@@ -264,6 +267,14 @@
 				F367BF3B2361177600FDEB0C /* Example4.swift */,
 			);
 			path = "Example 4 - Animating Multiple Polygon Properties";
+			sourceTree = "<group>";
+		};
+		F36D28DD23961A3300095B66 /* Example 12 - Reproducing an AnimatableModifier Bug */ = {
+			isa = PBXGroup;
+			children = (
+				F36D28DE23961A4E00095B66 /* Example12.swift */,
+			);
+			path = "Example 12 - Reproducing an AnimatableModifier Bug";
 			sourceTree = "<group>";
 		};
 		F3A5BF55236698350031FACF /* Example 7 - Metal Acceleration */ = {
@@ -459,6 +470,7 @@
 				F367BF39236100E200FDEB0C /* Example3.swift in Sources */,
 				F3A5BF5C23669AA50031FACF /* SpinningFlower+PetalLayer.swift in Sources */,
 				F33559562361F8F200628227 /* Example5.swift in Sources */,
+				F36D28DF23961A4E00095B66 /* Example12.swift in Sources */,
 				F3E53678236F80E700C512B8 /* TracingEffect.swift in Sources */,
 				F300415823623F9D005F5FE6 /* ClockShape.swift in Sources */,
 				F3AE83EB236C43590017AF2C /* View+SkewedOffset.swift in Sources */,

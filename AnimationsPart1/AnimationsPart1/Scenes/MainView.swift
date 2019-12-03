@@ -67,6 +67,13 @@ extension MainView {
                         Text("Example 11: \"Ignored By Layout\"")
                     }
                 }
+                
+                
+                Section(header: Text("Part 3: AnimatableModifier")) {
+                    NavigationLink(destination: Example12()) {
+                        Text("Example 12: Reproducing an AnimatableModifier Bug")
+                    }
+                }
             }
             .navigationBarTitle("SwiftUI Animation")
         }

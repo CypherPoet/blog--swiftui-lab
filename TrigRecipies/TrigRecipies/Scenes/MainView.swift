@@ -19,6 +19,9 @@ extension MainView {
                 NavigationLink(destination: CustomPolygonExample()) {
                     Text("Example 1: Custom Polygon Shape")
                 }
+                NavigationLink(destination: BulgingTextExample()) {
+                    Text("Example 2: Progressively Scaling Text")
+                }
             }
             .navigationBarTitle("SwiftUI Trig Recipies")
         }

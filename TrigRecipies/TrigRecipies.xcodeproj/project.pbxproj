@@ -16,6 +16,8 @@
 		F363486E237973A2006B7FFE /* CypherPoetMathUtils.Trig in Frameworks */ = {isa = PBXBuildFile; productRef = F363486D237973A2006B7FFE /* CypherPoetMathUtils.Trig */; };
 		F3634870237973F0006B7FFE /* CustomPolygonExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = F363486F237973F0006B7FFE /* CustomPolygonExample.swift */; };
 		F36348732379741A006B7FFE /* Polygon.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36348722379741A006B7FFE /* Polygon.swift */; };
+		F3F656EB2395DA84007AC32E /* BulgingTextExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F656EA2395DA84007AC32E /* BulgingTextExample.swift */; };
+		F3F656EE2395DAF9007AC32E /* BulgingText.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F656ED2395DAF9007AC32E /* BulgingText.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,8 @@
 		F363486A23797313006B7FFE /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		F363486F237973F0006B7FFE /* CustomPolygonExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPolygonExample.swift; sourceTree = "<group>"; };
 		F36348722379741A006B7FFE /* Polygon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Polygon.swift; sourceTree = "<group>"; };
+		F3F656EA2395DA84007AC32E /* BulgingTextExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BulgingTextExample.swift; sourceTree = "<group>"; };
+		F3F656ED2395DAF9007AC32E /* BulgingText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BulgingText.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				F363486A23797313006B7FFE /* MainView.swift */,
+				F3F656E92395D7D3007AC32E /* Progressively Bulging Text */,
 				F363486F237973F0006B7FFE /* CustomPolygonExample.swift */,
 			);
 			path = Scenes;
@@ -102,6 +107,7 @@
 		F3634869237972F1006B7FFE /* Reusables */ = {
 			isa = PBXGroup;
 			children = (
+				F3F656EC2395DAEA007AC32E /* Views */,
 				F363487123797406006B7FFE /* Shapes */,
 			);
 			path = Reusables;
@@ -113,6 +119,22 @@
 				F36348722379741A006B7FFE /* Polygon.swift */,
 			);
 			path = Shapes;
+			sourceTree = "<group>";
+		};
+		F3F656E92395D7D3007AC32E /* Progressively Bulging Text */ = {
+			isa = PBXGroup;
+			children = (
+				F3F656EA2395DA84007AC32E /* BulgingTextExample.swift */,
+			);
+			path = "Progressively Bulging Text";
+			sourceTree = "<group>";
+		};
+		F3F656EC2395DAEA007AC32E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F3F656ED2395DAF9007AC32E /* BulgingText.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,10 +214,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3F656EB2395DA84007AC32E /* BulgingTextExample.swift in Sources */,
 				F3634870237973F0006B7FFE /* CustomPolygonExample.swift in Sources */,
 				F36348732379741A006B7FFE /* Polygon.swift in Sources */,
 				F3634854237972AF006B7FFE /* AppDelegate.swift in Sources */,
 				F363486B23797313006B7FFE /* MainView.swift in Sources */,
+				F3F656EE2395DAF9007AC32E /* BulgingText.swift in Sources */,
 				F3634856237972AF006B7FFE /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

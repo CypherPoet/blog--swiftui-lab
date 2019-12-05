@@ -14,13 +14,6 @@ struct Example11: View {
 }
 
 
-// MARK: - Computeds
-extension Example11 {
-
-
-}
-
-
 // MARK: - Body
 extension Example11 {
 

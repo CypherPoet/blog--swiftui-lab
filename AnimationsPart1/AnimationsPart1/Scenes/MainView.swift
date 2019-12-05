@@ -73,6 +73,10 @@ extension MainView {
                     NavigationLink(destination: Example12()) {
                         Text("Example 12: Reproducing an AnimatableModifier Bug")
                     }
+                    
+                    NavigationLink(destination: Example13()) {
+                        Text("Example 13: Animating Text Corresponding to an effect")
+                    }
                 }
             }
             .navigationBarTitle("SwiftUI Animation")

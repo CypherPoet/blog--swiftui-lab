@@ -31,6 +31,9 @@
 		F36D290A2398847600095B66 /* DashedRingLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36D29092398847600095B66 /* DashedRingLoader.swift */; };
 		F36D290D23988B2700095B66 /* DashedRingLoader+CompletionArc.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36D290C23988B2600095B66 /* DashedRingLoader+CompletionArc.swift */; };
 		F36D290F23988B4B00095B66 /* DashedRingLoader+PercentageLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36D290E23988B4B00095B66 /* DashedRingLoader+PercentageLabel.swift */; };
+		F36D29122398D9FB00095B66 /* Example14.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36D29112398D9FB00095B66 /* Example14.swift */; };
+		F36D29172398DECA00095B66 /* AnimatableGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36D29152398DECA00095B66 /* AnimatableGradient.swift */; };
+		F36D29182398DECA00095B66 /* View+AnimatableGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36D29162398DECA00095B66 /* View+AnimatableGradient.swift */; };
 		F3A5BF572366984B0031FACF /* Example7.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A5BF562366984B0031FACF /* Example7.swift */; };
 		F3A5BF59236698BF0031FACF /* SpinningFlower.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A5BF58236698BF0031FACF /* SpinningFlower.swift */; };
 		F3A5BF5C23669AA50031FACF /* SpinningFlower+PetalLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A5BF5B23669AA50031FACF /* SpinningFlower+PetalLayer.swift */; };
@@ -76,6 +79,9 @@
 		F36D29092398847600095B66 /* DashedRingLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashedRingLoader.swift; sourceTree = "<group>"; };
 		F36D290C23988B2600095B66 /* DashedRingLoader+CompletionArc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DashedRingLoader+CompletionArc.swift"; sourceTree = "<group>"; };
 		F36D290E23988B4B00095B66 /* DashedRingLoader+PercentageLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DashedRingLoader+PercentageLabel.swift"; sourceTree = "<group>"; };
+		F36D29112398D9FB00095B66 /* Example14.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example14.swift; sourceTree = "<group>"; };
+		F36D29152398DECA00095B66 /* AnimatableGradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatableGradient.swift; sourceTree = "<group>"; };
+		F36D29162398DECA00095B66 /* View+AnimatableGradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+AnimatableGradient.swift"; sourceTree = "<group>"; };
 		F3A5BF562366984B0031FACF /* Example7.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example7.swift; sourceTree = "<group>"; };
 		F3A5BF58236698BF0031FACF /* SpinningFlower.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinningFlower.swift; sourceTree = "<group>"; };
 		F3A5BF5B23669AA50031FACF /* SpinningFlower+PetalLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SpinningFlower+PetalLayer.swift"; sourceTree = "<group>"; };
@@ -208,8 +214,6 @@
 			isa = PBXGroup;
 			children = (
 				F367BF13236071EE00FDEB0C /* MainView.swift */,
-				F36D2906239880FD00095B66 /* Example 13 - Animating Text */,
-				F36D28DD23961A3300095B66 /* Example 12 - Reproducing an AnimatableModifier Bug */,
 				F367BF152360721B00FDEB0C /* Example 1 */,
 				F367BF1F2360802300FDEB0C /* Example 2 - Explicit Animation */,
 				F367BF37236100C700FDEB0C /* Example 3 - Animating Polygon Sides */,
@@ -221,6 +225,9 @@
 				F3AE8420236DDF9B0017AF2C /* Example 9 - Animation Feedback and 3D Rotation */,
 				F3E53673236F7FB400C512B8 /* Example 10 - Animating Along A Path */,
 				F30444A22370D65700DF3F55 /* Example 11 - IgnoredByLayout */,
+				F36D28DD23961A3300095B66 /* Example 12 - Reproducing an AnimatableModifier Bug */,
+				F36D2906239880FD00095B66 /* Example 13 - Animating Text */,
+				F36D29102398D9EE00095B66 /* Example 14 - Animating Gradients */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -244,6 +251,7 @@
 		F367BF332360F69E00FDEB0C /* Reusables */ = {
 			isa = PBXGroup;
 			children = (
+				F36D29132398DE5100095B66 /* Animatable Modifiers */,
 				F3AE8429236DFC690017AF2C /* Views */,
 				F3AE83E7236C3FBB0017AF2C /* Geometry Effects */,
 				F367BF342360F6A800FDEB0C /* Shapes */,
@@ -302,6 +310,31 @@
 				F36D290E23988B4B00095B66 /* DashedRingLoader+PercentageLabel.swift */,
 			);
 			path = "Dashed Ring Loader";
+			sourceTree = "<group>";
+		};
+		F36D29102398D9EE00095B66 /* Example 14 - Animating Gradients */ = {
+			isa = PBXGroup;
+			children = (
+				F36D29112398D9FB00095B66 /* Example14.swift */,
+			);
+			path = "Example 14 - Animating Gradients";
+			sourceTree = "<group>";
+		};
+		F36D29132398DE5100095B66 /* Animatable Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				F36D29142398DE8500095B66 /* Animatable Gradient */,
+			);
+			path = "Animatable Modifiers";
+			sourceTree = "<group>";
+		};
+		F36D29142398DE8500095B66 /* Animatable Gradient */ = {
+			isa = PBXGroup;
+			children = (
+				F36D29152398DECA00095B66 /* AnimatableGradient.swift */,
+				F36D29162398DECA00095B66 /* View+AnimatableGradient.swift */,
+			);
+			path = "Animatable Gradient";
 			sourceTree = "<group>";
 		};
 		F3A5BF55236698350031FACF /* Example 7 - Metal Acceleration */ = {
@@ -486,6 +519,7 @@
 				F36D290F23988B4B00095B66 /* DashedRingLoader+PercentageLabel.swift in Sources */,
 				F30444A42370D66D00DF3F55 /* Example11.swift in Sources */,
 				F367BF14236071EE00FDEB0C /* MainView.swift in Sources */,
+				F36D29172398DECA00095B66 /* AnimatableGradient.swift in Sources */,
 				F36D290D23988B2700095B66 /* DashedRingLoader+CompletionArc.swift in Sources */,
 				F300415623623E89005F5FE6 /* Example6.swift in Sources */,
 				F30444A92370DB8000DF3F55 /* LayoutIgnorableOffsetEffect.swift in Sources */,
@@ -504,7 +538,9 @@
 				F36D28DF23961A4E00095B66 /* Example12.swift in Sources */,
 				F3E53678236F80E700C512B8 /* TracingEffect.swift in Sources */,
 				F36D29082398812800095B66 /* Example13.swift in Sources */,
+				F36D29122398D9FB00095B66 /* Example14.swift in Sources */,
 				F300415823623F9D005F5FE6 /* ClockShape.swift in Sources */,
+				F36D29182398DECA00095B66 /* View+AnimatableGradient.swift in Sources */,
 				F3AE83EB236C43590017AF2C /* View+SkewedOffset.swift in Sources */,
 				F367BF002360709500FDEB0C /* SceneDelegate.swift in Sources */,
 				F3AE8422236DDFB10017AF2C /* Example9.swift in Sources */,

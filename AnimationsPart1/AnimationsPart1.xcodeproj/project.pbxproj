@@ -34,6 +34,11 @@
 		F36D29122398D9FB00095B66 /* Example14.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36D29112398D9FB00095B66 /* Example14.swift */; };
 		F36D29172398DECA00095B66 /* AnimatableGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36D29152398DECA00095B66 /* AnimatableGradient.swift */; };
 		F36D29182398DECA00095B66 /* View+AnimatableGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36D29162398DECA00095B66 /* View+AnimatableGradient.swift */; };
+		F374DC1F239A611C0016CC65 /* Example15.swift in Sources */ = {isa = PBXBuildFile; fileRef = F374DC1E239A611C0016CC65 /* Example15.swift */; };
+		F374DC23239A61CB0016CC65 /* WaveTextAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F374DC21239A61CB0016CC65 /* WaveTextAnimation.swift */; };
+		F374DC24239A61CB0016CC65 /* View+WaveTextAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F374DC22239A61CB0016CC65 /* View+WaveTextAnimation.swift */; };
+		F374DC26239A638D0016CC65 /* WavingTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F374DC25239A638D0016CC65 /* WavingTextView.swift */; };
+		F374DC29239B4D390016CC65 /* CypherPoetSwiftUIKit in Frameworks */ = {isa = PBXBuildFile; productRef = F374DC28239B4D390016CC65 /* CypherPoetSwiftUIKit */; };
 		F3A5BF572366984B0031FACF /* Example7.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A5BF562366984B0031FACF /* Example7.swift */; };
 		F3A5BF59236698BF0031FACF /* SpinningFlower.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A5BF58236698BF0031FACF /* SpinningFlower.swift */; };
 		F3A5BF5C23669AA50031FACF /* SpinningFlower+PetalLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A5BF5B23669AA50031FACF /* SpinningFlower+PetalLayer.swift */; };
@@ -82,6 +87,10 @@
 		F36D29112398D9FB00095B66 /* Example14.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example14.swift; sourceTree = "<group>"; };
 		F36D29152398DECA00095B66 /* AnimatableGradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatableGradient.swift; sourceTree = "<group>"; };
 		F36D29162398DECA00095B66 /* View+AnimatableGradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+AnimatableGradient.swift"; sourceTree = "<group>"; };
+		F374DC1E239A611C0016CC65 /* Example15.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example15.swift; sourceTree = "<group>"; };
+		F374DC21239A61CB0016CC65 /* WaveTextAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaveTextAnimation.swift; sourceTree = "<group>"; };
+		F374DC22239A61CB0016CC65 /* View+WaveTextAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+WaveTextAnimation.swift"; sourceTree = "<group>"; };
+		F374DC25239A638D0016CC65 /* WavingTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WavingTextView.swift; sourceTree = "<group>"; };
 		F3A5BF562366984B0031FACF /* Example7.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example7.swift; sourceTree = "<group>"; };
 		F3A5BF58236698BF0031FACF /* SpinningFlower.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinningFlower.swift; sourceTree = "<group>"; };
 		F3A5BF5B23669AA50031FACF /* SpinningFlower+PetalLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SpinningFlower+PetalLayer.swift"; sourceTree = "<group>"; };
@@ -106,6 +115,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F3E5367D236F89DD00C512B8 /* Burritos in Frameworks */,
+				F374DC29239B4D390016CC65 /* CypherPoetSwiftUIKit in Frameworks */,
 				F367BF1E2360766B00FDEB0C /* CypherPoetSwiftUIKit.ImageUtils in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -167,6 +177,7 @@
 			children = (
 				F367BEFC2360709500FDEB0C /* AnimationsPart1 */,
 				F367BEFB2360709500FDEB0C /* Products */,
+				F374DC27239B4D390016CC65 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -214,6 +225,7 @@
 			isa = PBXGroup;
 			children = (
 				F367BF13236071EE00FDEB0C /* MainView.swift */,
+				F374DC1D239A60FE0016CC65 /* Example 15 - Progressive Text Animation */,
 				F367BF152360721B00FDEB0C /* Example 1 */,
 				F367BF1F2360802300FDEB0C /* Example 2 - Explicit Animation */,
 				F367BF37236100C700FDEB0C /* Example 3 - Animating Polygon Sides */,
@@ -323,6 +335,7 @@
 		F36D29132398DE5100095B66 /* Animatable Modifiers */ = {
 			isa = PBXGroup;
 			children = (
+				F374DC20239A61830016CC65 /* Wave Text */,
 				F36D29142398DE8500095B66 /* Animatable Gradient */,
 			);
 			path = "Animatable Modifiers";
@@ -335,6 +348,30 @@
 				F36D29162398DECA00095B66 /* View+AnimatableGradient.swift */,
 			);
 			path = "Animatable Gradient";
+			sourceTree = "<group>";
+		};
+		F374DC1D239A60FE0016CC65 /* Example 15 - Progressive Text Animation */ = {
+			isa = PBXGroup;
+			children = (
+				F374DC1E239A611C0016CC65 /* Example15.swift */,
+			);
+			path = "Example 15 - Progressive Text Animation";
+			sourceTree = "<group>";
+		};
+		F374DC20239A61830016CC65 /* Wave Text */ = {
+			isa = PBXGroup;
+			children = (
+				F374DC21239A61CB0016CC65 /* WaveTextAnimation.swift */,
+				F374DC22239A61CB0016CC65 /* View+WaveTextAnimation.swift */,
+			);
+			path = "Wave Text";
+			sourceTree = "<group>";
+		};
+		F374DC27239B4D390016CC65 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		F3A5BF55236698350031FACF /* Example 7 - Metal Acceleration */ = {
@@ -405,6 +442,7 @@
 			children = (
 				F3AE842A236DFC7C0017AF2C /* RotatingCard.swift */,
 				F36D290B23988AF900095B66 /* Dashed Ring Loader */,
+				F374DC25239A638D0016CC65 /* WavingTextView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -446,6 +484,7 @@
 			packageProductDependencies = (
 				F367BF1D2360766B00FDEB0C /* CypherPoetSwiftUIKit.ImageUtils */,
 				F3E5367C236F89DD00C512B8 /* Burritos */,
+				F374DC28239B4D390016CC65 /* CypherPoetSwiftUIKit */,
 			);
 			productName = AnimationsPart1;
 			productReference = F367BEFA2360709500FDEB0C /* AnimationsPart1.app */;
@@ -509,15 +548,19 @@
 				F3AE842B236DFC7C0017AF2C /* RotatingCard.swift in Sources */,
 				F3A5BF59236698BF0031FACF /* SpinningFlower.swift in Sources */,
 				F367BEFE2360709500FDEB0C /* AppDelegate.swift in Sources */,
+				F374DC26239A638D0016CC65 /* WavingTextView.swift in Sources */,
 				F3AE83E6236C3F370017AF2C /* Example8.swift in Sources */,
 				F3A5BF5E2366A2F80031FACF /* PetalShape.swift in Sources */,
 				F367BF3C2361177600FDEB0C /* Example4.swift in Sources */,
 				F3AE83E9236C3FD60017AF2C /* SkewedOffset.swift in Sources */,
+				F374DC23239A61CB0016CC65 /* WaveTextAnimation.swift in Sources */,
 				F3E53675236F7FF000C512B8 /* Example10.swift in Sources */,
 				F3E5367A236F80FD00C512B8 /* View+TracingEffect.swift in Sources */,
 				F3E53683236F9C1100C512B8 /* InfinityShape.swift in Sources */,
+				F374DC24239A61CB0016CC65 /* View+WaveTextAnimation.swift in Sources */,
 				F36D290F23988B4B00095B66 /* DashedRingLoader+PercentageLabel.swift in Sources */,
 				F30444A42370D66D00DF3F55 /* Example11.swift in Sources */,
+				F374DC1F239A611C0016CC65 /* Example15.swift in Sources */,
 				F367BF14236071EE00FDEB0C /* MainView.swift in Sources */,
 				F36D29172398DECA00095B66 /* AnimatableGradient.swift in Sources */,
 				F36D290D23988B2700095B66 /* DashedRingLoader+CompletionArc.swift in Sources */,
@@ -763,6 +806,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = F367BF1C2360766B00FDEB0C /* XCRemoteSwiftPackageReference "CypherPoetSwiftUIKit" */;
 			productName = CypherPoetSwiftUIKit.ImageUtils;
+		};
+		F374DC28239B4D390016CC65 /* CypherPoetSwiftUIKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F367BF1C2360766B00FDEB0C /* XCRemoteSwiftPackageReference "CypherPoetSwiftUIKit" */;
+			productName = CypherPoetSwiftUIKit;
 		};
 		F3E5367C236F89DD00C512B8 /* Burritos */ = {
 			isa = XCSwiftPackageProductDependency;

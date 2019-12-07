@@ -52,7 +52,7 @@ extension DashedRingLoader.CompletionArc: Shape {
 extension DashedRingLoader.CompletionArc {
 
     private func center(in rect: CGRect) -> CGPoint {
-        .init(x: rect.width / 2, y: rect.height / 2)
+        .init(x: rect.midX, y: rect.midY)
     }
 
     

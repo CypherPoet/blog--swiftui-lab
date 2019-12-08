@@ -39,6 +39,10 @@
 		F374DC24239A61CB0016CC65 /* View+WaveTextAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F374DC22239A61CB0016CC65 /* View+WaveTextAnimation.swift */; };
 		F374DC26239A638D0016CC65 /* WavingTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F374DC25239A638D0016CC65 /* WavingTextView.swift */; };
 		F374DC29239B4D390016CC65 /* CypherPoetSwiftUIKit in Frameworks */ = {isa = PBXBuildFile; productRef = F374DC28239B4D390016CC65 /* CypherPoetSwiftUIKit */; };
+		F374DC2C239B5FD90016CC65 /* Example16.swift in Sources */ = {isa = PBXBuildFile; fileRef = F374DC2B239B5FD90016CC65 /* Example16.swift */; };
+		F374DC2F239B60400016CC65 /* ClippedCounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F374DC2E239B60400016CC65 /* ClippedCounterView.swift */; };
+		F374DC33239B65D30016CC65 /* ClippedCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F374DC31239B65D30016CC65 /* ClippedCounter.swift */; };
+		F374DC34239B65D30016CC65 /* View+ClippedCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F374DC32239B65D30016CC65 /* View+ClippedCounter.swift */; };
 		F3A5BF572366984B0031FACF /* Example7.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A5BF562366984B0031FACF /* Example7.swift */; };
 		F3A5BF59236698BF0031FACF /* SpinningFlower.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A5BF58236698BF0031FACF /* SpinningFlower.swift */; };
 		F3A5BF5C23669AA50031FACF /* SpinningFlower+PetalLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A5BF5B23669AA50031FACF /* SpinningFlower+PetalLayer.swift */; };
@@ -50,6 +54,7 @@
 		F3AE8426236DE2320017AF2C /* TurnoverEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AE8425236DE2320017AF2C /* TurnoverEffect.swift */; };
 		F3AE8428236DEF490017AF2C /* View+Turnover.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AE8427236DEF480017AF2C /* View+Turnover.swift */; };
 		F3AE842B236DFC7C0017AF2C /* RotatingCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AE842A236DFC7C0017AF2C /* RotatingCard.swift */; };
+		F3BF5BE5239CBDE100B9F8D8 /* Color+Mixing.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BF5BE4239CBDE100B9F8D8 /* Color+Mixing.swift */; };
 		F3E53675236F7FF000C512B8 /* Example10.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E53674236F7FF000C512B8 /* Example10.swift */; };
 		F3E53678236F80E700C512B8 /* TracingEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E53677236F80E700C512B8 /* TracingEffect.swift */; };
 		F3E5367A236F80FD00C512B8 /* View+TracingEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E53679236F80FD00C512B8 /* View+TracingEffect.swift */; };
@@ -91,6 +96,10 @@
 		F374DC21239A61CB0016CC65 /* WaveTextAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaveTextAnimation.swift; sourceTree = "<group>"; };
 		F374DC22239A61CB0016CC65 /* View+WaveTextAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+WaveTextAnimation.swift"; sourceTree = "<group>"; };
 		F374DC25239A638D0016CC65 /* WavingTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WavingTextView.swift; sourceTree = "<group>"; };
+		F374DC2B239B5FD90016CC65 /* Example16.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example16.swift; sourceTree = "<group>"; };
+		F374DC2E239B60400016CC65 /* ClippedCounterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClippedCounterView.swift; sourceTree = "<group>"; };
+		F374DC31239B65D30016CC65 /* ClippedCounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClippedCounter.swift; sourceTree = "<group>"; };
+		F374DC32239B65D30016CC65 /* View+ClippedCounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+ClippedCounter.swift"; sourceTree = "<group>"; };
 		F3A5BF562366984B0031FACF /* Example7.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example7.swift; sourceTree = "<group>"; };
 		F3A5BF58236698BF0031FACF /* SpinningFlower.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinningFlower.swift; sourceTree = "<group>"; };
 		F3A5BF5B23669AA50031FACF /* SpinningFlower+PetalLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SpinningFlower+PetalLayer.swift"; sourceTree = "<group>"; };
@@ -102,6 +111,7 @@
 		F3AE8425236DE2320017AF2C /* TurnoverEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TurnoverEffect.swift; sourceTree = "<group>"; };
 		F3AE8427236DEF480017AF2C /* View+Turnover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Turnover.swift"; sourceTree = "<group>"; };
 		F3AE842A236DFC7C0017AF2C /* RotatingCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotatingCard.swift; sourceTree = "<group>"; };
+		F3BF5BE4239CBDE100B9F8D8 /* Color+Mixing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Mixing.swift"; sourceTree = "<group>"; };
 		F3E53674236F7FF000C512B8 /* Example10.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example10.swift; sourceTree = "<group>"; };
 		F3E53677236F80E700C512B8 /* TracingEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TracingEffect.swift; sourceTree = "<group>"; };
 		F3E53679236F80FD00C512B8 /* View+TracingEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+TracingEffect.swift"; sourceTree = "<group>"; };
@@ -225,6 +235,7 @@
 			isa = PBXGroup;
 			children = (
 				F367BF13236071EE00FDEB0C /* MainView.swift */,
+				F374DC2A239B5FC00016CC65 /* Example 16 - Animating Clipped Counter */,
 				F374DC1D239A60FE0016CC65 /* Example 15 - Progressive Text Animation */,
 				F367BF152360721B00FDEB0C /* Example 1 */,
 				F367BF1F2360802300FDEB0C /* Example 2 - Explicit Animation */,
@@ -263,6 +274,7 @@
 		F367BF332360F69E00FDEB0C /* Reusables */ = {
 			isa = PBXGroup;
 			children = (
+				F3BF5BE2239CBDC100B9F8D8 /* Extensions */,
 				F36D29132398DE5100095B66 /* Animatable Modifiers */,
 				F3AE8429236DFC690017AF2C /* Views */,
 				F3AE83E7236C3FBB0017AF2C /* Geometry Effects */,
@@ -335,6 +347,7 @@
 		F36D29132398DE5100095B66 /* Animatable Modifiers */ = {
 			isa = PBXGroup;
 			children = (
+				F374DC30239B64D50016CC65 /* Clipped Counter */,
 				F374DC20239A61830016CC65 /* Wave Text */,
 				F36D29142398DE8500095B66 /* Animatable Gradient */,
 			);
@@ -372,6 +385,31 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F374DC2A239B5FC00016CC65 /* Example 16 - Animating Clipped Counter */ = {
+			isa = PBXGroup;
+			children = (
+				F374DC2B239B5FD90016CC65 /* Example16.swift */,
+			);
+			path = "Example 16 - Animating Clipped Counter";
+			sourceTree = "<group>";
+		};
+		F374DC2D239B602E0016CC65 /* Clipped Counter */ = {
+			isa = PBXGroup;
+			children = (
+				F374DC2E239B60400016CC65 /* ClippedCounterView.swift */,
+			);
+			path = "Clipped Counter";
+			sourceTree = "<group>";
+		};
+		F374DC30239B64D50016CC65 /* Clipped Counter */ = {
+			isa = PBXGroup;
+			children = (
+				F374DC31239B65D30016CC65 /* ClippedCounter.swift */,
+				F374DC32239B65D30016CC65 /* View+ClippedCounter.swift */,
+			);
+			path = "Clipped Counter";
 			sourceTree = "<group>";
 		};
 		F3A5BF55236698350031FACF /* Example 7 - Metal Acceleration */ = {
@@ -440,11 +478,28 @@
 		F3AE8429236DFC690017AF2C /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				F374DC2D239B602E0016CC65 /* Clipped Counter */,
 				F3AE842A236DFC7C0017AF2C /* RotatingCard.swift */,
 				F36D290B23988AF900095B66 /* Dashed Ring Loader */,
 				F374DC25239A638D0016CC65 /* WavingTextView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		F3BF5BE2239CBDC100B9F8D8 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F3BF5BE3239CBDC600B9F8D8 /* Color */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F3BF5BE3239CBDC600B9F8D8 /* Color */ = {
+			isa = PBXGroup;
+			children = (
+				F3BF5BE4239CBDE100B9F8D8 /* Color+Mixing.swift */,
+			);
+			path = Color;
 			sourceTree = "<group>";
 		};
 		F3E53673236F7FB400C512B8 /* Example 10 - Animating Along A Path */ = {
@@ -559,12 +614,16 @@
 				F3E53683236F9C1100C512B8 /* InfinityShape.swift in Sources */,
 				F374DC24239A61CB0016CC65 /* View+WaveTextAnimation.swift in Sources */,
 				F36D290F23988B4B00095B66 /* DashedRingLoader+PercentageLabel.swift in Sources */,
+				F374DC34239B65D30016CC65 /* View+ClippedCounter.swift in Sources */,
 				F30444A42370D66D00DF3F55 /* Example11.swift in Sources */,
 				F374DC1F239A611C0016CC65 /* Example15.swift in Sources */,
 				F367BF14236071EE00FDEB0C /* MainView.swift in Sources */,
+				F374DC2C239B5FD90016CC65 /* Example16.swift in Sources */,
 				F36D29172398DECA00095B66 /* AnimatableGradient.swift in Sources */,
 				F36D290D23988B2700095B66 /* DashedRingLoader+CompletionArc.swift in Sources */,
+				F374DC33239B65D30016CC65 /* ClippedCounter.swift in Sources */,
 				F300415623623E89005F5FE6 /* Example6.swift in Sources */,
+				F374DC2F239B60400016CC65 /* ClippedCounterView.swift in Sources */,
 				F30444A92370DB8000DF3F55 /* LayoutIgnorableOffsetEffect.swift in Sources */,
 				F3E5367F236F9A3700C512B8 /* LoopingPlaneView.swift in Sources */,
 				F367BF362360F73C00FDEB0C /* PolygonShape.swift in Sources */,
@@ -575,6 +634,7 @@
 				F367BF172360731100FDEB0C /* Example1.swift in Sources */,
 				F30444A82370DB8000DF3F55 /* View+LayoutIgnorableOffsetEffect .swift in Sources */,
 				F367BF212360804600FDEB0C /* Example2.swift in Sources */,
+				F3BF5BE5239CBDE100B9F8D8 /* Color+Mixing.swift in Sources */,
 				F367BF39236100E200FDEB0C /* Example3.swift in Sources */,
 				F3A5BF5C23669AA50031FACF /* SpinningFlower+PetalLayer.swift in Sources */,
 				F33559562361F8F200628227 /* Example5.swift in Sources */,

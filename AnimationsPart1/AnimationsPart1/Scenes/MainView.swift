@@ -86,6 +86,10 @@ extension MainView {
                          Text("Example 15: Progressive Text Animation")
                     }
                     
+                    NavigationLink(destination: Example16()) {
+                           Text("Example 16: Animating Clipped Counter")
+                      }
+                    
                 }
             }
             .navigationBarTitle("SwiftUI Animation")

@@ -29,6 +29,7 @@ extension EntryView {
                 
                 Section(header: Text("Custom Transitions")) {
                     NavigationLink("Replicating the Opacity Transition", destination: CustomOpacityTransitionExample())
+                    NavigationLink("Custom Modal Fly-in", destination: CustomFlyTransitionExample())
                 }
             }
             .navigationBarTitle("SwiftUI Transitions")

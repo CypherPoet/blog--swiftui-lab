@@ -20,6 +20,9 @@
 		F307C8AD23A9FB26002B2A83 /* TransitionsWithParametersExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = F307C8AC23A9FB26002B2A83 /* TransitionsWithParametersExample.swift */; };
 		F307C8B123AA0185002B2A83 /* CustomOpacityTransitionExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = F307C8B023AA0185002B2A83 /* CustomOpacityTransitionExample.swift */; };
 		F307C8B423AA0206002B2A83 /* AnyTransition+customOpacity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F307C8B323AA0206002B2A83 /* AnyTransition+customOpacity.swift */; };
+		F3C675FF23AA1F01005E12EB /* CustomFlyTransitionExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C675FE23AA1F01005E12EB /* CustomFlyTransitionExample.swift */; };
+		F3C6760123AA243C005E12EB /* AnyTransition+fly.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C6760023AA243C005E12EB /* AnyTransition+fly.swift */; };
+		F3C6760623AA24EE005E12EB /* FlyTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C6760423AA24EE005E12EB /* FlyTransition.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +41,9 @@
 		F307C8AC23A9FB26002B2A83 /* TransitionsWithParametersExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionsWithParametersExample.swift; sourceTree = "<group>"; };
 		F307C8B023AA0185002B2A83 /* CustomOpacityTransitionExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomOpacityTransitionExample.swift; sourceTree = "<group>"; };
 		F307C8B323AA0206002B2A83 /* AnyTransition+customOpacity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AnyTransition+customOpacity.swift"; sourceTree = "<group>"; };
+		F3C675FE23AA1F01005E12EB /* CustomFlyTransitionExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFlyTransitionExample.swift; sourceTree = "<group>"; };
+		F3C6760023AA243C005E12EB /* AnyTransition+fly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AnyTransition+fly.swift"; sourceTree = "<group>"; };
+		F3C6760423AA24EE005E12EB /* FlyTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlyTransition.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				F307C8B023AA0185002B2A83 /* CustomOpacityTransitionExample.swift */,
+				F3C675FE23AA1F01005E12EB /* CustomFlyTransitionExample.swift */,
 			);
 			path = "Custom Transitions";
 			sourceTree = "<group>";
@@ -140,8 +147,18 @@
 			isa = PBXGroup;
 			children = (
 				F307C8B323AA0206002B2A83 /* AnyTransition+customOpacity.swift */,
+				F3C6760223AA24CE005E12EB /* Fly */,
 			);
 			path = Transitions;
+			sourceTree = "<group>";
+		};
+		F3C6760223AA24CE005E12EB /* Fly */ = {
+			isa = PBXGroup;
+			children = (
+				F3C6760023AA243C005E12EB /* AnyTransition+fly.swift */,
+				F3C6760423AA24EE005E12EB /* FlyTransition.swift */,
+			);
+			path = Fly;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -218,9 +235,12 @@
 				F307C8B423AA0206002B2A83 /* AnyTransition+customOpacity.swift in Sources */,
 				F307C8AB23A9EDC1002B2A83 /* CombinedTransitionsExample.swift in Sources */,
 				F307C8A323A9B8AF002B2A83 /* BasicTransitionExample.swift in Sources */,
+				F3C675FF23AA1F01005E12EB /* CustomFlyTransitionExample.swift in Sources */,
 				F307C88C23A9B7A3002B2A83 /* AppDelegate.swift in Sources */,
 				F307C8AD23A9FB26002B2A83 /* TransitionsWithParametersExample.swift in Sources */,
 				F307C88E23A9B7A3002B2A83 /* SceneDelegate.swift in Sources */,
+				F3C6760123AA243C005E12EB /* AnyTransition+fly.swift in Sources */,
+				F3C6760623AA24EE005E12EB /* FlyTransition.swift in Sources */,
 				F307C8A123A9B858002B2A83 /* EntryView.swift in Sources */,
 				F307C8B123AA0185002B2A83 /* CustomOpacityTransitionExample.swift in Sources */,
 				F307C8A723A9C243002B2A83 /* LabelView.swift in Sources */,

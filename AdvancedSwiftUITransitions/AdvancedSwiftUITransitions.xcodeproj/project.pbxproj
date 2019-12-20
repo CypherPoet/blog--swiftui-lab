@@ -20,9 +20,20 @@
 		F307C8AD23A9FB26002B2A83 /* TransitionsWithParametersExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = F307C8AC23A9FB26002B2A83 /* TransitionsWithParametersExample.swift */; };
 		F307C8B123AA0185002B2A83 /* CustomOpacityTransitionExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = F307C8B023AA0185002B2A83 /* CustomOpacityTransitionExample.swift */; };
 		F307C8B423AA0206002B2A83 /* AnyTransition+customOpacity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F307C8B323AA0206002B2A83 /* AnyTransition+customOpacity.swift */; };
+		F32592F223AB444200F9BADA /* GalleryPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32592F023AB444200F9BADA /* GalleryPhoto.swift */; };
+		F32592F323AB444200F9BADA /* View+GalleryPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32592F123AB444200F9BADA /* View+GalleryPhoto.swift */; };
+		F32592F723ABBDFD00F9BADA /* AnyTransition+Circular.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32592F623ABBDFD00F9BADA /* AnyTransition+Circular.swift */; };
+		F32592FA23ABBEFD00F9BADA /* CircleClipShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32592F923ABBEFD00F9BADA /* CircleClipShape.swift */; };
+		F32592FE23ABBF2900F9BADA /* ShapeClipModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32592FC23ABBF2900F9BADA /* ShapeClipModifier.swift */; };
+		F32592FF23ABBF2900F9BADA /* View+ShapeClipModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32592FD23ABBF2900F9BADA /* View+ShapeClipModifier.swift */; };
+		F325930123ACA56E00F9BADA /* RectangleClipShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = F325930023ACA56E00F9BADA /* RectangleClipShape.swift */; };
+		F325930323ACA5B000F9BADA /* AnyTransition+Rectangular.swift in Sources */ = {isa = PBXBuildFile; fileRef = F325930223ACA5B000F9BADA /* AnyTransition+Rectangular.swift */; };
+		F325930523ACADCD00F9BADA /* AnyTransition+Stripes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F325930423ACADCD00F9BADA /* AnyTransition+Stripes.swift */; };
+		F325930723ACAF4900F9BADA /* StripeClipShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = F325930623ACAF4900F9BADA /* StripeClipShape.swift */; };
 		F3C675FF23AA1F01005E12EB /* CustomFlyTransitionExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C675FE23AA1F01005E12EB /* CustomFlyTransitionExample.swift */; };
 		F3C6760123AA243C005E12EB /* AnyTransition+fly.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C6760023AA243C005E12EB /* AnyTransition+fly.swift */; };
 		F3C6760623AA24EE005E12EB /* FlyTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C6760423AA24EE005E12EB /* FlyTransition.swift */; };
+		F3C6760823AA413B005E12EB /* CustomShapeTransitionsExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C6760723AA413B005E12EB /* CustomShapeTransitionsExample.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,9 +52,20 @@
 		F307C8AC23A9FB26002B2A83 /* TransitionsWithParametersExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionsWithParametersExample.swift; sourceTree = "<group>"; };
 		F307C8B023AA0185002B2A83 /* CustomOpacityTransitionExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomOpacityTransitionExample.swift; sourceTree = "<group>"; };
 		F307C8B323AA0206002B2A83 /* AnyTransition+customOpacity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AnyTransition+customOpacity.swift"; sourceTree = "<group>"; };
+		F32592F023AB444200F9BADA /* GalleryPhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryPhoto.swift; sourceTree = "<group>"; };
+		F32592F123AB444200F9BADA /* View+GalleryPhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+GalleryPhoto.swift"; sourceTree = "<group>"; };
+		F32592F623ABBDFD00F9BADA /* AnyTransition+Circular.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AnyTransition+Circular.swift"; sourceTree = "<group>"; };
+		F32592F923ABBEFD00F9BADA /* CircleClipShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleClipShape.swift; sourceTree = "<group>"; };
+		F32592FC23ABBF2900F9BADA /* ShapeClipModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeClipModifier.swift; sourceTree = "<group>"; };
+		F32592FD23ABBF2900F9BADA /* View+ShapeClipModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+ShapeClipModifier.swift"; sourceTree = "<group>"; };
+		F325930023ACA56E00F9BADA /* RectangleClipShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangleClipShape.swift; sourceTree = "<group>"; };
+		F325930223ACA5B000F9BADA /* AnyTransition+Rectangular.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AnyTransition+Rectangular.swift"; sourceTree = "<group>"; };
+		F325930423ACADCD00F9BADA /* AnyTransition+Stripes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AnyTransition+Stripes.swift"; sourceTree = "<group>"; };
+		F325930623ACAF4900F9BADA /* StripeClipShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StripeClipShape.swift; sourceTree = "<group>"; };
 		F3C675FE23AA1F01005E12EB /* CustomFlyTransitionExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFlyTransitionExample.swift; sourceTree = "<group>"; };
 		F3C6760023AA243C005E12EB /* AnyTransition+fly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AnyTransition+fly.swift"; sourceTree = "<group>"; };
 		F3C6760423AA24EE005E12EB /* FlyTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlyTransition.swift; sourceTree = "<group>"; };
+		F3C6760723AA413B005E12EB /* CustomShapeTransitionsExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomShapeTransitionsExample.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,11 +98,11 @@
 		F307C88A23A9B7A3002B2A83 /* AdvancedSwiftUITransitions */ = {
 			isa = PBXGroup;
 			children = (
+				F32592F423AB45DA00F9BADA /* Resources */,
 				F307C8A423A9C232002B2A83 /* Reusables */,
 				F307C89F23A9B84C002B2A83 /* Scenes */,
 				F307C88B23A9B7A3002B2A83 /* AppDelegate.swift */,
 				F307C88D23A9B7A3002B2A83 /* SceneDelegate.swift */,
-				F307C89123A9B7A6002B2A83 /* Assets.xcassets */,
 				F307C89623A9B7A6002B2A83 /* LaunchScreen.storyboard */,
 				F307C89923A9B7A6002B2A83 /* Info.plist */,
 				F307C89323A9B7A6002B2A83 /* Preview Content */,
@@ -109,6 +131,9 @@
 		F307C8A423A9C232002B2A83 /* Reusables */ = {
 			isa = PBXGroup;
 			children = (
+				F32592FB23ABBF1D00F9BADA /* View Modifiers */,
+				F32592F823ABBEF200F9BADA /* Shapes */,
+				F32592EE23AB43EF00F9BADA /* Styles */,
 				F307C8B223AA01F1002B2A83 /* Transitions */,
 				F307C8A523A9C237002B2A83 /* Views */,
 			);
@@ -139,6 +164,7 @@
 			children = (
 				F307C8B023AA0185002B2A83 /* CustomOpacityTransitionExample.swift */,
 				F3C675FE23AA1F01005E12EB /* CustomFlyTransitionExample.swift */,
+				F3C6760723AA413B005E12EB /* CustomShapeTransitionsExample.swift */,
 			);
 			path = "Custom Transitions";
 			sourceTree = "<group>";
@@ -146,10 +172,65 @@
 		F307C8B223AA01F1002B2A83 /* Transitions */ = {
 			isa = PBXGroup;
 			children = (
+				F32592F523ABBDC900F9BADA /* Circular */,
 				F307C8B323AA0206002B2A83 /* AnyTransition+customOpacity.swift */,
 				F3C6760223AA24CE005E12EB /* Fly */,
+				F32592F623ABBDFD00F9BADA /* AnyTransition+Circular.swift */,
+				F325930223ACA5B000F9BADA /* AnyTransition+Rectangular.swift */,
 			);
 			path = Transitions;
+			sourceTree = "<group>";
+		};
+		F32592EE23AB43EF00F9BADA /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				F32592EF23AB443500F9BADA /* Gallery Photo */,
+			);
+			path = Styles;
+			sourceTree = "<group>";
+		};
+		F32592EF23AB443500F9BADA /* Gallery Photo */ = {
+			isa = PBXGroup;
+			children = (
+				F32592F023AB444200F9BADA /* GalleryPhoto.swift */,
+				F32592F123AB444200F9BADA /* View+GalleryPhoto.swift */,
+			);
+			path = "Gallery Photo";
+			sourceTree = "<group>";
+		};
+		F32592F423AB45DA00F9BADA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F307C89123A9B7A6002B2A83 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F32592F523ABBDC900F9BADA /* Circular */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Circular;
+			sourceTree = "<group>";
+		};
+		F32592F823ABBEF200F9BADA /* Shapes */ = {
+			isa = PBXGroup;
+			children = (
+				F32592F923ABBEFD00F9BADA /* CircleClipShape.swift */,
+				F325930623ACAF4900F9BADA /* StripeClipShape.swift */,
+				F325930423ACADCD00F9BADA /* AnyTransition+Stripes.swift */,
+				F325930023ACA56E00F9BADA /* RectangleClipShape.swift */,
+			);
+			path = Shapes;
+			sourceTree = "<group>";
+		};
+		F32592FB23ABBF1D00F9BADA /* View Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				F32592FC23ABBF2900F9BADA /* ShapeClipModifier.swift */,
+				F32592FD23ABBF2900F9BADA /* View+ShapeClipModifier.swift */,
+			);
+			path = "View Modifiers";
 			sourceTree = "<group>";
 		};
 		F3C6760223AA24CE005E12EB /* Fly */ = {
@@ -232,18 +313,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3C6760823AA413B005E12EB /* CustomShapeTransitionsExample.swift in Sources */,
+				F32592FF23ABBF2900F9BADA /* View+ShapeClipModifier.swift in Sources */,
+				F32592FA23ABBEFD00F9BADA /* CircleClipShape.swift in Sources */,
 				F307C8B423AA0206002B2A83 /* AnyTransition+customOpacity.swift in Sources */,
+				F32592F723ABBDFD00F9BADA /* AnyTransition+Circular.swift in Sources */,
+				F32592F323AB444200F9BADA /* View+GalleryPhoto.swift in Sources */,
 				F307C8AB23A9EDC1002B2A83 /* CombinedTransitionsExample.swift in Sources */,
 				F307C8A323A9B8AF002B2A83 /* BasicTransitionExample.swift in Sources */,
+				F32592FE23ABBF2900F9BADA /* ShapeClipModifier.swift in Sources */,
+				F32592F223AB444200F9BADA /* GalleryPhoto.swift in Sources */,
 				F3C675FF23AA1F01005E12EB /* CustomFlyTransitionExample.swift in Sources */,
 				F307C88C23A9B7A3002B2A83 /* AppDelegate.swift in Sources */,
 				F307C8AD23A9FB26002B2A83 /* TransitionsWithParametersExample.swift in Sources */,
 				F307C88E23A9B7A3002B2A83 /* SceneDelegate.swift in Sources */,
+				F325930323ACA5B000F9BADA /* AnyTransition+Rectangular.swift in Sources */,
 				F3C6760123AA243C005E12EB /* AnyTransition+fly.swift in Sources */,
+				F325930723ACAF4900F9BADA /* StripeClipShape.swift in Sources */,
+				F325930123ACA56E00F9BADA /* RectangleClipShape.swift in Sources */,
 				F3C6760623AA24EE005E12EB /* FlyTransition.swift in Sources */,
 				F307C8A123A9B858002B2A83 /* EntryView.swift in Sources */,
 				F307C8B123AA0185002B2A83 /* CustomOpacityTransitionExample.swift in Sources */,
 				F307C8A723A9C243002B2A83 /* LabelView.swift in Sources */,
+				F325930523ACADCD00F9BADA /* AnyTransition+Stripes.swift in Sources */,
 				F307C8A923A9C2F3002B2A83 /* AsymmetricTransitionsExample.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

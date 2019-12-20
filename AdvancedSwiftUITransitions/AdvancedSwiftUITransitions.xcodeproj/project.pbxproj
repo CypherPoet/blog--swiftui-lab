@@ -172,11 +172,11 @@
 		F307C8B223AA01F1002B2A83 /* Transitions */ = {
 			isa = PBXGroup;
 			children = (
-				F32592F523ABBDC900F9BADA /* Circular */,
-				F307C8B323AA0206002B2A83 /* AnyTransition+customOpacity.swift */,
-				F3C6760223AA24CE005E12EB /* Fly */,
 				F32592F623ABBDFD00F9BADA /* AnyTransition+Circular.swift */,
+				F307C8B323AA0206002B2A83 /* AnyTransition+customOpacity.swift */,
 				F325930223ACA5B000F9BADA /* AnyTransition+Rectangular.swift */,
+				F32592F523ABBDC900F9BADA /* Circular */,
+				F3C6760223AA24CE005E12EB /* Fly */,
 			);
 			path = Transitions;
 			sourceTree = "<group>";

@@ -20,6 +20,7 @@ extension RootView {
         NavigationView {
             List {
                 NavigationLink("Custom Buttons", destination: CustomButtonsExample())
+                NavigationLink("Custom Toggles", destination: CustomTogglesExample())
             }
             .navigationBarTitle("Custom Styling")
         }

@@ -17,6 +17,9 @@
 		F390D44323B0337300B8D6B7 /* CustomButtonStyles+ShrinkingOnTap.swift in Sources */ = {isa = PBXBuildFile; fileRef = F390D44223B0337300B8D6B7 /* CustomButtonStyles+ShrinkingOnTap.swift */; };
 		F390D44523B0387E00B8D6B7 /* CustomButtonStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = F390D44423B0387E00B8D6B7 /* CustomButtonStyles.swift */; };
 		F390D44723B038DC00B8D6B7 /* CustomButtonStyles+ShrinkingOnLongPress.swift in Sources */ = {isa = PBXBuildFile; fileRef = F390D44623B038DC00B8D6B7 /* CustomButtonStyles+ShrinkingOnLongPress.swift */; };
+		F390D44923B0F2FC00B8D6B7 /* CustomTogglesExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = F390D44823B0F2FC00B8D6B7 /* CustomTogglesExample.swift */; };
+		F390D44C23B100E900B8D6B7 /* CustomToggleStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = F390D44B23B100E900B8D6B7 /* CustomToggleStyles.swift */; };
+		F390D44E23B1028200B8D6B7 /* SquareSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = F390D44D23B1028200B8D6B7 /* SquareSwitch.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +35,9 @@
 		F390D44223B0337300B8D6B7 /* CustomButtonStyles+ShrinkingOnTap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CustomButtonStyles+ShrinkingOnTap.swift"; sourceTree = "<group>"; };
 		F390D44423B0387E00B8D6B7 /* CustomButtonStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtonStyles.swift; sourceTree = "<group>"; };
 		F390D44623B038DC00B8D6B7 /* CustomButtonStyles+ShrinkingOnLongPress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CustomButtonStyles+ShrinkingOnLongPress.swift"; sourceTree = "<group>"; };
+		F390D44823B0F2FC00B8D6B7 /* CustomTogglesExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTogglesExample.swift; sourceTree = "<group>"; };
+		F390D44B23B100E900B8D6B7 /* CustomToggleStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomToggleStyles.swift; sourceTree = "<group>"; };
+		F390D44D23B1028200B8D6B7 /* SquareSwitch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareSwitch.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +95,7 @@
 			children = (
 				F390D43A23B0322800B8D6B7 /* RootView.swift */,
 				F390D43C23B0329300B8D6B7 /* CustomButtonsExample.swift */,
+				F390D44823B0F2FC00B8D6B7 /* CustomTogglesExample.swift */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -104,6 +111,7 @@
 		F390D43F23B0332700B8D6B7 /* Styles */ = {
 			isa = PBXGroup;
 			children = (
+				F390D44A23B100C000B8D6B7 /* Toggles */,
 				F390D44023B0332B00B8D6B7 /* Buttons */,
 			);
 			path = Styles;
@@ -117,6 +125,15 @@
 				F390D44423B0387E00B8D6B7 /* CustomButtonStyles.swift */,
 			);
 			path = Buttons;
+			sourceTree = "<group>";
+		};
+		F390D44A23B100C000B8D6B7 /* Toggles */ = {
+			isa = PBXGroup;
+			children = (
+				F390D44B23B100E900B8D6B7 /* CustomToggleStyles.swift */,
+				F390D44D23B1028200B8D6B7 /* SquareSwitch.swift */,
+			);
+			path = Toggles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -191,11 +208,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				F390D42623B02D7B00B8D6B7 /* AppDelegate.swift in Sources */,
+				F390D44923B0F2FC00B8D6B7 /* CustomTogglesExample.swift in Sources */,
 				F390D42823B02D7B00B8D6B7 /* SceneDelegate.swift in Sources */,
 				F390D44523B0387E00B8D6B7 /* CustomButtonStyles.swift in Sources */,
+				F390D44C23B100E900B8D6B7 /* CustomToggleStyles.swift in Sources */,
 				F390D44323B0337300B8D6B7 /* CustomButtonStyles+ShrinkingOnTap.swift in Sources */,
 				F390D44723B038DC00B8D6B7 /* CustomButtonStyles+ShrinkingOnLongPress.swift in Sources */,
 				F390D43B23B0322800B8D6B7 /* RootView.swift in Sources */,
+				F390D44E23B1028200B8D6B7 /* SquareSwitch.swift in Sources */,
 				F390D43D23B0329300B8D6B7 /* CustomButtonsExample.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

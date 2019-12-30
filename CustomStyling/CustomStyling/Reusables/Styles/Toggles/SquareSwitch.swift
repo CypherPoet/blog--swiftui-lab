@@ -12,8 +12,7 @@ import SwiftUI
 
 extension CustomToggleStyles {
     
-    struct SquareToggle: ToggleStyle {
-        var verticalSpacing: CGFloat = 2.0
+    struct SquareToggle: ToggleStyle, SquareToggleStyling {
         var trackWidth: CGFloat = 50.0
 
 
@@ -73,17 +72,11 @@ extension CustomToggleStyles.SquareToggle {
         static let off = Color.secondary
     }
     
-    var fabWidth: CGFloat { (trackWidth / 2) }
-    var trackHeight: CGFloat { (trackWidth / 2) }
-    var cornerRadius: CGFloat { trackWidth * CGFloat(0.065) }
-    
     private enum AccessibilityActivationPoint {
         static let on = UnitPoint(x: 0.25, y: 0.5)
         static let off = UnitPoint(x: 0.75, y: 0.5)
     }
 }
-
-
 
 
 // MARK: - Preview

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -20,6 +20,15 @@
 		F390D44923B0F2FC00B8D6B7 /* CustomTogglesExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = F390D44823B0F2FC00B8D6B7 /* CustomTogglesExample.swift */; };
 		F390D44C23B100E900B8D6B7 /* CustomToggleStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = F390D44B23B100E900B8D6B7 /* CustomToggleStyles.swift */; };
 		F390D44E23B1028200B8D6B7 /* SquareSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = F390D44D23B1028200B8D6B7 /* SquareSwitch.swift */; };
+		F39D6C6523B80E0F003E2A25 /* TripleToggleStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39D6C6423B80E0F003E2A25 /* TripleToggleStyle.swift */; };
+		F39D6C6723B80E1C003E2A25 /* TripleToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39D6C6623B80E1C003E2A25 /* TripleToggle.swift */; };
+		F39D6C6923B81AF1003E2A25 /* View+tripleToggleStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39D6C6823B81AF1003E2A25 /* View+tripleToggleStyle.swift */; };
+		F39D6C6B23B81B1C003E2A25 /* DefaultTripleToggleStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39D6C6A23B81B1C003E2A25 /* DefaultTripleToggleStyle.swift */; };
+		F3D9031823B6C66900ED0851 /* StyledCustomViewsExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D9031723B6C66900ED0851 /* StyledCustomViewsExample.swift */; };
+		F3D9031C23B7321F00ED0851 /* MultiStateSquareToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D9031B23B7321F00ED0851 /* MultiStateSquareToggle.swift */; };
+		F3D9031F23B7343C00ED0851 /* SquareToggleStyling.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D9031E23B7343C00ED0851 /* SquareToggleStyling.swift */; };
+		F3D9032223B7361D00ED0851 /* CypherPoetSwiftUIKit in Frameworks */ = {isa = PBXBuildFile; productRef = F3D9032123B7361D00ED0851 /* CypherPoetSwiftUIKit */; };
+		F3E425B723B9B93B00A143BE /* KnobTripleToggleStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E425B623B9B93B00A143BE /* KnobTripleToggleStyle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +47,14 @@
 		F390D44823B0F2FC00B8D6B7 /* CustomTogglesExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTogglesExample.swift; sourceTree = "<group>"; };
 		F390D44B23B100E900B8D6B7 /* CustomToggleStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomToggleStyles.swift; sourceTree = "<group>"; };
 		F390D44D23B1028200B8D6B7 /* SquareSwitch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareSwitch.swift; sourceTree = "<group>"; };
+		F39D6C6423B80E0F003E2A25 /* TripleToggleStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripleToggleStyle.swift; sourceTree = "<group>"; };
+		F39D6C6623B80E1C003E2A25 /* TripleToggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripleToggle.swift; sourceTree = "<group>"; };
+		F39D6C6823B81AF1003E2A25 /* View+tripleToggleStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+tripleToggleStyle.swift"; sourceTree = "<group>"; };
+		F39D6C6A23B81B1C003E2A25 /* DefaultTripleToggleStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultTripleToggleStyle.swift; sourceTree = "<group>"; };
+		F3D9031723B6C66900ED0851 /* StyledCustomViewsExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyledCustomViewsExample.swift; sourceTree = "<group>"; };
+		F3D9031B23B7321F00ED0851 /* MultiStateSquareToggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiStateSquareToggle.swift; sourceTree = "<group>"; };
+		F3D9031E23B7343C00ED0851 /* SquareToggleStyling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareToggleStyling.swift; sourceTree = "<group>"; };
+		F3E425B623B9B93B00A143BE /* KnobTripleToggleStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnobTripleToggleStyle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3D9032223B7361D00ED0851 /* CypherPoetSwiftUIKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				F390D43A23B0322800B8D6B7 /* RootView.swift */,
+				F3D9031723B6C66900ED0851 /* StyledCustomViewsExample.swift */,
 				F390D43C23B0329300B8D6B7 /* CustomButtonsExample.swift */,
 				F390D44823B0F2FC00B8D6B7 /* CustomTogglesExample.swift */,
 			);
@@ -103,6 +122,7 @@
 		F390D43E23B032CF00B8D6B7 /* Reusables */ = {
 			isa = PBXGroup;
 			children = (
+				F3D9031D23B7343000ED0851 /* Protocols */,
 				F390D43F23B0332700B8D6B7 /* Styles */,
 			);
 			path = Reusables;
@@ -111,6 +131,7 @@
 		F390D43F23B0332700B8D6B7 /* Styles */ = {
 			isa = PBXGroup;
 			children = (
+				F39D6C6323B80DD7003E2A25 /* Triple Toggle */,
 				F390D44A23B100C000B8D6B7 /* Toggles */,
 				F390D44023B0332B00B8D6B7 /* Buttons */,
 			);
@@ -132,8 +153,37 @@
 			children = (
 				F390D44B23B100E900B8D6B7 /* CustomToggleStyles.swift */,
 				F390D44D23B1028200B8D6B7 /* SquareSwitch.swift */,
+				F3D9031B23B7321F00ED0851 /* MultiStateSquareToggle.swift */,
 			);
 			path = Toggles;
+			sourceTree = "<group>";
+		};
+		F39D6C6323B80DD7003E2A25 /* Triple Toggle */ = {
+			isa = PBXGroup;
+			children = (
+				F3E425B523B9B85900A143BE /* Styles */,
+				F39D6C6823B81AF1003E2A25 /* View+tripleToggleStyle.swift */,
+				F39D6C6623B80E1C003E2A25 /* TripleToggle.swift */,
+			);
+			path = "Triple Toggle";
+			sourceTree = "<group>";
+		};
+		F3D9031D23B7343000ED0851 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				F3D9031E23B7343C00ED0851 /* SquareToggleStyling.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		F3E425B523B9B85900A143BE /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				F39D6C6A23B81B1C003E2A25 /* DefaultTripleToggleStyle.swift */,
+				F3E425B623B9B93B00A143BE /* KnobTripleToggleStyle.swift */,
+				F39D6C6423B80E0F003E2A25 /* TripleToggleStyle.swift */,
+			);
+			path = Styles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,6 +202,9 @@
 			dependencies = (
 			);
 			name = CustomStyling;
+			packageProductDependencies = (
+				F3D9032123B7361D00ED0851 /* CypherPoetSwiftUIKit */,
+			);
 			productName = CustomStyling;
 			productReference = F390D42223B02D7B00B8D6B7 /* CustomStyling.app */;
 			productType = "com.apple.product-type.application";
@@ -180,6 +233,9 @@
 				Base,
 			);
 			mainGroup = F390D41923B02D7B00B8D6B7;
+			packageReferences = (
+				F3D9032023B7361D00ED0851 /* XCRemoteSwiftPackageReference "CypherPoetSwiftUIKit" */,
+			);
 			productRefGroup = F390D42323B02D7B00B8D6B7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -207,14 +263,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F39D6C6923B81AF1003E2A25 /* View+tripleToggleStyle.swift in Sources */,
 				F390D42623B02D7B00B8D6B7 /* AppDelegate.swift in Sources */,
+				F39D6C6523B80E0F003E2A25 /* TripleToggleStyle.swift in Sources */,
+				F3E425B723B9B93B00A143BE /* KnobTripleToggleStyle.swift in Sources */,
+				F3D9031F23B7343C00ED0851 /* SquareToggleStyling.swift in Sources */,
+				F39D6C6723B80E1C003E2A25 /* TripleToggle.swift in Sources */,
 				F390D44923B0F2FC00B8D6B7 /* CustomTogglesExample.swift in Sources */,
 				F390D42823B02D7B00B8D6B7 /* SceneDelegate.swift in Sources */,
 				F390D44523B0387E00B8D6B7 /* CustomButtonStyles.swift in Sources */,
 				F390D44C23B100E900B8D6B7 /* CustomToggleStyles.swift in Sources */,
 				F390D44323B0337300B8D6B7 /* CustomButtonStyles+ShrinkingOnTap.swift in Sources */,
 				F390D44723B038DC00B8D6B7 /* CustomButtonStyles+ShrinkingOnLongPress.swift in Sources */,
+				F3D9031C23B7321F00ED0851 /* MultiStateSquareToggle.swift in Sources */,
 				F390D43B23B0322800B8D6B7 /* RootView.swift in Sources */,
+				F3D9031823B6C66900ED0851 /* StyledCustomViewsExample.swift in Sources */,
+				F39D6C6B23B81B1C003E2A25 /* DefaultTripleToggleStyle.swift in Sources */,
 				F390D44E23B1028200B8D6B7 /* SquareSwitch.swift in Sources */,
 				F390D43D23B0329300B8D6B7 /* CustomButtonsExample.swift in Sources */,
 			);
@@ -410,6 +474,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F3D9032023B7361D00ED0851 /* XCRemoteSwiftPackageReference "CypherPoetSwiftUIKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/CypherPoet/CypherPoetSwiftUIKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.32;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F3D9032123B7361D00ED0851 /* CypherPoetSwiftUIKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F3D9032023B7361D00ED0851 /* XCRemoteSwiftPackageReference "CypherPoetSwiftUIKit" */;
+			productName = CypherPoetSwiftUIKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F390D41A23B02D7B00B8D6B7 /* Project object */;
 }

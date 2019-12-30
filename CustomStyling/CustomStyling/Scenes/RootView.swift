@@ -21,6 +21,7 @@ extension RootView {
             List {
                 NavigationLink("Custom Buttons", destination: CustomButtonsExample())
                 NavigationLink("Custom Toggles", destination: CustomTogglesExample())
+                NavigationLink("Styled Custom Views", destination: StyledCustomViewsExample())
             }
             .navigationBarTitle("Custom Styling")
         }

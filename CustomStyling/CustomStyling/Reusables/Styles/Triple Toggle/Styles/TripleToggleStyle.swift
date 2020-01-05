@@ -10,7 +10,7 @@ import SwiftUI
 
 
 
-/// 📝: https://swiftui-lab.com/custom-styling/
+/// 📝:v https://swiftui-lab.com/custom-styling/
 public protocol TripleToggleStyle {
     associatedtype Body: View
     

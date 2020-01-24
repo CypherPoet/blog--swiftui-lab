@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F331C40A23DA78700061925E /* RotatingCompassArrowExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = F331C40923DA78700061925E /* RotatingCompassArrowExample.swift */; };
+		F331C40D23DA7C6D0061925E /* CompassDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = F331C40C23DA7C6D0061925E /* CompassDirection.swift */; };
+		F331C41423DA840F0061925E /* View+compassNeedleRotationEffect .swift in Sources */ = {isa = PBXBuildFile; fileRef = F331C41223DA840F0061925E /* View+compassNeedleRotationEffect .swift */; };
+		F331C41523DA840F0061925E /* CompassNeedleRotationEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = F331C41323DA840F0061925E /* CompassNeedleRotationEffect.swift */; };
 		F3E425D523C16D1C00A143BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E425D423C16D1C00A143BE /* AppDelegate.swift */; };
 		F3E425D723C16D1C00A143BE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E425D623C16D1C00A143BE /* SceneDelegate.swift */; };
 		F3E425DB23C16D1E00A143BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3E425DA23C16D1E00A143BE /* Assets.xcassets */; };
@@ -23,6 +27,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F331C40923DA78700061925E /* RotatingCompassArrowExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotatingCompassArrowExample.swift; sourceTree = "<group>"; };
+		F331C40C23DA7C6D0061925E /* CompassDirection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompassDirection.swift; sourceTree = "<group>"; };
+		F331C41223DA840F0061925E /* View+compassNeedleRotationEffect .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+compassNeedleRotationEffect .swift"; sourceTree = "<group>"; };
+		F331C41323DA840F0061925E /* CompassNeedleRotationEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompassNeedleRotationEffect.swift; sourceTree = "<group>"; };
 		F3E425D123C16D1C00A143BE /* StateChanges.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StateChanges.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3E425D423C16D1C00A143BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F3E425D623C16D1C00A143BE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +59,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F331C40B23DA7C620061925E /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				F331C40C23DA7C6D0061925E /* CompassDirection.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		F331C40E23DA7E690061925E /* CPU Wheel */ = {
+			isa = PBXGroup;
+			children = (
+				F3E425FF23C1948700A143BE /* CPUWheel+ViewModel.swift */,
+				F3E425FD23C186AC00A143BE /* CPUWheel.swift */,
+			);
+			path = "CPU Wheel";
+			sourceTree = "<group>";
+		};
+		F331C41123DA83EF0061925E /* Geometry Effects */ = {
+			isa = PBXGroup;
+			children = (
+				F331C41223DA840F0061925E /* View+compassNeedleRotationEffect .swift */,
+				F331C41323DA840F0061925E /* CompassNeedleRotationEffect.swift */,
+			);
+			path = "Geometry Effects";
+			sourceTree = "<group>";
+		};
 		F3E425C823C16D1C00A143BE = {
 			isa = PBXGroup;
 			children = (
@@ -92,6 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				F3E425EE23C16E1200A143BE /* RootView.swift */,
+				F331C40923DA78700061925E /* RotatingCompassArrowExample.swift */,
 				F3E425F023C1720700A143BE /* OutOfControlViewExample.swift */,
 			);
 			path = Scenes;
@@ -110,6 +145,8 @@
 		F3E425EA23C16D3500A143BE /* Reusables */ = {
 			isa = PBXGroup;
 			children = (
+				F331C41123DA83EF0061925E /* Geometry Effects */,
+				F331C40B23DA7C620061925E /* Enums */,
 				F3E4260623C26B9B00A143BE /* Formatters */,
 				F3E4260323C2667100A143BE /* Shapes */,
 				F3E425FA23C1863B00A143BE /* Views */,
@@ -121,9 +158,8 @@
 		F3E425FA23C1863B00A143BE /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				F331C40E23DA7E690061925E /* CPU Wheel */,
 				F3E425FB23C1864B00A143BE /* TorchingCPUView.swift */,
-				F3E425FD23C186AC00A143BE /* CPUWheel.swift */,
-				F3E425FF23C1948700A143BE /* CPUWheel+ViewModel.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -216,8 +252,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				F3E425FE23C186AC00A143BE /* CPUWheel.swift in Sources */,
+				F331C40A23DA78700061925E /* RotatingCompassArrowExample.swift in Sources */,
 				F3E4260523C2668200A143BE /* CircleArcClipShape.swift in Sources */,
+				F331C41423DA840F0061925E /* View+compassNeedleRotationEffect .swift in Sources */,
 				F3E425FC23C1864B00A143BE /* TorchingCPUView.swift in Sources */,
+				F331C40D23DA7C6D0061925E /* CompassDirection.swift in Sources */,
 				F3E425D523C16D1C00A143BE /* AppDelegate.swift in Sources */,
 				F3E425F123C1720700A143BE /* OutOfControlViewExample.swift in Sources */,
 				F3E425D723C16D1C00A143BE /* SceneDelegate.swift in Sources */,
@@ -225,6 +264,7 @@
 				F3E425EF23C16E1200A143BE /* RootView.swift in Sources */,
 				F3E4260023C1948700A143BE /* CPUWheel+ViewModel.swift in Sources */,
 				F3E4260823C26BAD00A143BE /* NumberFormatters.swift in Sources */,
+				F331C41523DA840F0061925E /* CompassNeedleRotationEffect.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

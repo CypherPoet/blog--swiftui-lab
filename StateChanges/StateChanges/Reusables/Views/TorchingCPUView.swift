@@ -18,6 +18,13 @@ struct TorchingCPUView: View {
 extension TorchingCPUView {
 
     var body: some View {
+        
+        // 📝 When we update the state inside an async closure, we are
+        // saying: "Finish computing the view body, and then, update the state".
+        //
+        // However, since a state change will trigger a view invalidation,
+        // the view body will get computed again, a new state change will
+        // be scheduled and this story will never end.
         DispatchQueue.main.async {
             self.counter += 1
         }

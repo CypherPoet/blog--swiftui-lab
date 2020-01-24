@@ -20,6 +20,7 @@ extension RootView {
         NavigationView {
             List {
                 NavigationLink("Out of Control View", destination: OutOfControlViewExample())
+                NavigationLink("Rotating Compass Arrow", destination: RotatingCompassArrowExample())
             }
         }
     }
